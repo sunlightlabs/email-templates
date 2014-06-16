@@ -700,6 +700,17 @@ body.outlook p {
     }
 }
 
+.header-share-label {
+  color: #AFA89C;
+  font-weight: normal;
+  font-size: 12px;
+}
+
+.header-share-label a{
+  color: #AFA89C;
+  text-decoration: underline;
+}
+
 .callout .wrapper {
     padding-bottom: 20px;
 }
