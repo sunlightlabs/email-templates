@@ -746,7 +746,7 @@
                 font-family: Helvetica;
                 font-size: 16px;
                 color: #464646;
-                line-height:15px;
+                line-height:55px;
             }
 
             .splashArticle-author{
@@ -780,15 +780,17 @@
                 text-transform:uppercase;
                 text-align: center;
                 padding-top: 14px;
+                margin-bottom: 40px;
 
             }
 
           
             .article-h2{
-                font-family: Arial, Helvetica, sans-serif;
+                font-family: Georgia, Times, serif;
                 font-size: 22px;
                 line-height: 28px;
                 color: #464646;
+                padding-top: 20px;
 
             }
 
@@ -801,19 +803,55 @@
             }
 
             .article-date{
-                font-family: Georgia, serif;
+                font-family: Helvetica, Arial, sans-serif;
                 font-size: 16px;
                 line-height: 24px;
                 font-weight: 500;
                 color: #7d7d7d;
             }
-/**-------------------------------------------------Twitter Box styles**/
+
+            .sectionHeader{
+				font-family: helvetica;
+				font-weight: bold; 
+				font-size: 16px;
+				letter-spacing: 2px;
+				text-transform: uppercase;
+				text-align:center;
+				padding-top: 20px;
+			}
+
+/**----------------------------------------------------------Twitter Box styles**/
 
             .tweetBox{
-            	width: 100%;
-            	height: 267px;
 				background-color:#f1dc57;
+				padding:30px 50px 35px 50px;
+				margin: 50px 0 50px 0;
             }
+
+            .tweetHandle{
+				font-family: Helvetica, arial, sans-serif;
+				font-weight: 900;
+				font-size: 16px;
+				line-height: 32px;
+				color: #464646;
+				margin-bottom:0;
+			}
+
+            .tweetText{
+            	font-family: Georgia, serif;
+				font-size: 22px;
+				line-height: 32px;
+			}
+
+			.tweetView{
+				font-family: helvetica, arial, sans-serif;
+				font-size: 12px;
+				color: #689FA8;
+				text-align:right;
+				padding-top:10px;
+			}
+
+/**------------------------------------------------------From our Friends styles**/			
 
 
 
@@ -1034,8 +1072,8 @@
                 <td>
 
                   <a href="#"><p class="splashArticle-h1">47 groups rally around FOIA reform as bill moves to Senate floor</p></a>
-                  <p class="splashArticle-author">by Emily Shaw</p>
-                  <p class="splashArticle-date">February 6, 2015</p>
+                  <div class="splashArticle-author">by Emily Shaw</div>
+                  <div class="splashArticle-date">February 6, 2015</div>
                  
 
                 </td>
@@ -1054,7 +1092,7 @@
             <table class="twelve columns">
               <tr>
                 <td>
-                    <p class="splashArticle-p">As Sunlight explores the public use of microdata, we are also exploring the practical, legal and ethical challenges of working with individual-level data.</p>
+                    <div class="splashArticle-p">As Sunlight explores the public use of microdata, we are also exploring the practical, legal and ethical challenges of working with individual-level data.</div>
 
                 </td>
                 <td class="expander"></td>
@@ -1103,7 +1141,9 @@
               <tr>
                 <td>
 
-                  twelve Columns
+                  <div class="article-h2">Has the U.S. taken the lead in open data practices globally?</div>
+                  <div class="article-author">by Matthew Rumsey and Sean Vitka and John Wonderlich</div>
+                  <div class="article-date">February 9, 2014</div>
 
                 </td>
                 <td class="expander"></td>
@@ -1134,7 +1174,9 @@
               <tr>
                 <td>
 
-                  twelve Columns
+                  <div class="article-h2">Has the U.S. taken the lead in open data practices globally?</div>
+                  <div class="article-author">by Matthew Rumsey and Sean Vitka and John Wonderlich</div>
+                  <div class="article-date">February 9, 2014</div>
 
                 </td>
                 <td class="expander"></td>
@@ -1165,7 +1207,9 @@
               <tr>
                 <td>
 
-                  twelve Columns
+                  <div class="article-h2">Has the U.S. taken the lead in open data practices globally?</div>
+                  <div class="article-author">by Matthew Rumsey and Sean Vitka and John Wonderlich</div>
+                  <div class="article-date">February 9, 2014</div>
 
                 </td>
                 <td class="expander"></td>
@@ -1196,7 +1240,12 @@
               <tr>
                 <td>
 
-                  <div class="tweetBox"></div>
+                  <div class="tweetBox">
+                  		<p class="sectionHeader">Tweet of the Week</p>
+                  		<div class="tweetHandle">@<a href="#">Sunfoundation</a></div>
+                  		<div class="tweetText">Great reporting by @<a href="#">nancyscola</a>-Dirty data: Why '4M public comments' on #netneutrality might not be what they seem <a href="#">http://wpo.st/ctVNy</a></div>
+                  		<div class="tweetView"><a href="#">View on Twitter</a></div>
+                  	</div>
 
                 </td>
                 <td class="expander"></td>
@@ -1214,6 +1263,42 @@
     </td>
   </tr>
 </table>
+
+<table class="container">
+  <tr>
+    <td>
+
+      <table class="row">
+        <tr>
+          <td class="wrapper">
+
+            <table class="twelve columns">
+              <tr>
+                <td class="center">
+            		<center>
+
+                	<img style="float:none!important;"src="http://assets.sunlightfoundation.com.s3.amazonaws.com/email/Email-Images/hand-shake.png">	
+                	</center>
+                	<p class="sectionHeader">From our Friends</p>
+
+                </td>
+                <td class="expander"></td>
+              </tr>
+            </table>
+
+          </td>
+          <td class="wrapper last">
+
+          
+          </td>
+        </tr>
+      </table>
+
+    </td>
+  </tr>
+</table>
+
+
 
     </td>
   </tr>
