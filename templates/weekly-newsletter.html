@@ -718,7 +718,92 @@
             }
         }
         
-/**-------------------------------------------------Weekly newsletter css**/
+
+        .header-share-label {
+          color: #AFA89C;
+          font-weight: normal;
+          font-size: 12px;
+        }
+
+        .header-share-label a{
+          color: #AFA89C;
+          text-decoration: underline;
+        }
+
+        .callout .wrapper {
+            padding-bottom: 20px;
+        }
+
+        .callout .panel {
+            background: #ECF8FF;
+            border-color: #b9e5ff;
+        }
+
+        .header {
+            background: #F4F4F2;
+        }
+
+        .header-logo {
+            background: #FFF;
+
+        }
+
+        .footer h5 {
+            padding-bottom: 5px;
+            padding-top: 10px;
+            text-transform: uppercase;
+            font-family: arial, sans-serif;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        table.columns .text-pad {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        table.columns .left-text-pad {
+            padding-left: 10px;
+        }
+
+        table.columns .right-text-pad {
+            padding-right: 10px;
+        }
+
+        @media only screen and (max-width: 600px) {
+
+            table[class="body"] .right-text-pad {
+            padding-left: 10px !important;
+            }
+
+            table[class="body"] .left-text-pad {
+            padding-right: 10px !important;
+            }
+        }
+
+        /* Footer */
+        .row.footer {
+            background: #F7F6F4;
+            border-top: solid 2px #C1BAA9;
+            border-bottom: solid 2px #C1BAA9;
+        }
+
+        .row.footer .footer-text {
+            font-size: 12px;
+        }
+
+        /* hidden email preview text */
+        td.email-preview-text {
+            visibility: hidden;
+            display: none;
+            padding: 0 !important;
+            margin:0;
+            height:0px;
+            font-size:1px;
+            color: #dce3db;
+        }
+
+        /**-------------------------------------------------Weekly newsletter css**/
 
 /**-------------------------------------Body Styles**/
 
@@ -818,87 +903,89 @@
             }
 
             .sectionHeader{
-				font-family: helvetica;
-				font-weight: bold; 
-				font-size: 16px;
-				letter-spacing: 2px;
-				text-transform: uppercase;
-				text-align:center;
-				padding-top: 20px;
-			}
+                font-family: helvetica;
+                font-weight: bold; 
+                font-size: 16px;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                text-align:center;
+                padding-top: 20px;
+            }
 
-			.article-friends{
-				font-family: Georgia, serif;
-				font-size: 18px;
-				margin-bottom:4px;
-				
-			}
+            .article-friends{
+                font-family: Georgia, serif;
+                font-size: 18px;
+                margin-bottom:4px;
+                
+            }
 
-			.article-friends-name{
-				font-family:Georgia, serif;
-				font-size: 16px;
-				color: #f47920;
-				font-style: italic;
-				margin-bottom:4px;
-			}
+            .article-friends-name{
+                font-family:Georgia, serif;
+                font-size: 16px;
+                color: #f47920;
+                font-style: italic;
+                margin-bottom:4px;
+            }
 
-			.article-friends-date{
-				font-family: Helvetica, Arial, sans-serif;
-				font-size: 16px;
-				color: #7d7d7d;
-				margin-bottom:30px;
-			}
+            .article-friends-date{
+                font-family: Helvetica, Arial, sans-serif;
+                font-size: 16px;
+                color: #7d7d7d;
+                margin-bottom:30px;
+            }
 
 /**----------------------------------------------------------Twitter Box styles**/
 
             .tweetBox{
-				background-color:#f1dc57;
-				padding:30px 50px 35px 50px;
-				margin: 50px 0 50px 0;
-				background-image: http://assets.sunlightfoundation.com.s3.amazonaws.com/email/Email-Images/cap-building.png;
+                width:490px;
+                height:100%;
+                background-color:#f1dc57;
+                padding:50px;
+                margin: 50px 0 50px 0;
+                background-image: http://assets.sunlightfoundation.com.s3.amazonaws.com/email/Email-Images/cap-building.png;
             }
 
             .tweetHandle{
-				font-family: Helvetica, arial, sans-serif;
-				font-weight: 900;
-				font-size: 16px;
-				line-height: 32px;
-				color: #464646;
-				margin-bottom:0;
+                font-family: Helvetica, arial, sans-serif;
+                font-weight: 900;
+                font-size: 16px;
+                line-height: 32px;
+                color: #464646;
+                margin-bottom:0;
 
-			}
+            }
 
             .tweetText{
-            	font-family: Georgia, serif;
-				font-size: 22px;
-				line-height: 32px;
-			}
+                font-family: Georgia, serif;
+                font-size: 22px;
+                line-height: 32px;
+            }
 
-			.tweetView{
-				font-family: helvetica, arial, sans-serif;
-				font-size: 12px;
-				color: #689FA8;
-				text-align:right;
-				padding-top:10px;
-			}
+            .tweetView{
+                font-family: helvetica, arial, sans-serif;
+                font-size: 12px;
+                color: #689FA8;
+                text-align:right;
+                padding-top:10px;
+            }
 
-			.tweetView a:after{
-				display:inline-block;
-				content:'';
-				border-left:4px solid #689FA8;;
-				border-top: 4px solid transparent;
-				border-bottom: 4px solid transparent;
-				width: 0;
-				height: 0;
-				margin-left: 5px;
-			}
+            .tweetView a:after{
+                display:inline-block;
+                content:'';
+                border-left:4px solid #689FA8;;
+                border-top: 4px solid transparent;
+                border-bottom: 4px solid transparent;
+                width: 0;
+                height: 0;
+                margin-left: 5px;
+            }
 
-/**------------------------------------------------------From our Friends styles**/	
+/**------------------------------------------------------From our Friends styles**/ 
 
-/**------------------------------------------------------Connect with Us styles**/	
-			img.twitter{
-				float: right;
-			}		
+/**------------------------------------------------------Connect with Us styles**/  
+            img.twitter{
+                float: right;
+            }       
 
 /**------------------------------------------------------Connect with Us styles**/
         .custom-newsletter{
@@ -907,90 +994,6 @@
 
 
 /**-------------------------------------------------END-Weekly newsletter styles**/
-
-        .header-share-label {
-          color: #AFA89C;
-          font-weight: normal;
-          font-size: 12px;
-        }
-
-        .header-share-label a{
-          color: #AFA89C;
-          text-decoration: underline;
-        }
-
-        .callout .wrapper {
-            padding-bottom: 20px;
-        }
-
-        .callout .panel {
-            background: #ECF8FF;
-            border-color: #b9e5ff;
-        }
-
-        .header {
-            background: #F4F4F2;
-        }
-
-        .header-logo {
-            background: #FFF;
-
-        }
-
-        .footer h5 {
-            padding-bottom: 5px;
-            padding-top: 10px;
-            text-transform: uppercase;
-            font-family: arial, sans-serif;
-            font-size: 14px;
-            font-weight: bold;
-        }
-
-        table.columns .text-pad {
-            padding-left: 10px;
-            padding-right: 10px;
-        }
-
-        table.columns .left-text-pad {
-            padding-left: 10px;
-        }
-
-        table.columns .right-text-pad {
-            padding-right: 10px;
-        }
-
-        @media only screen and (max-width: 600px) {
-
-            table[class="body"] .right-text-pad {
-            padding-left: 10px !important;
-            }
-
-            table[class="body"] .left-text-pad {
-            padding-right: 10px !important;
-            }
-        }
-
-        /* Footer */
-        .row.footer {
-            background: #F7F6F4;
-            border-top: solid 2px #C1BAA9;
-            border-bottom: solid 2px #C1BAA9;
-        }
-
-        .row.footer .footer-text {
-            font-size: 12px;
-        }
-
-        /* hidden email preview text */
-        td.email-preview-text {
-            visibility: hidden;
-            display: none;
-            padding: 0 !important;
-            margin:0;
-            height:0px;
-            font-size:1px;
-            color: #dce3db;
-        }
     </style>
 </head>
 
