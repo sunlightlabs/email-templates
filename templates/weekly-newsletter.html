@@ -612,7 +612,11 @@
 
         /*  Media Queries */
 
-        @media only screen and (max-width: 600px) {
+        @media  screen and (device-width: 480px) and (device-height: 360px), screen and (device-width: 360px) and (device-height: 480px), screen and (device-width: 320px) and (device-height: 240px){
+
+             table[class=contenttable] { 
+            width: 320px !important;
+        }
 
         	table[class="body"] img {
         		width: auto !important;
@@ -773,7 +777,7 @@
         	padding-right: 10px;
         }
 
-        @media only screen and (max-width: 600px) {
+        @media only screen and (max-device-width: 480px) {
 
         	table[class="body"] .right-text-pad {
         		padding-left: 10px !important;
