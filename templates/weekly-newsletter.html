@@ -1046,6 +1046,7 @@
 
             table[class="body"] .container {
                 width: 95% !important;
+                margin:0;
             }
 
             table[class="body"] .row {
@@ -1148,7 +1149,7 @@
                 height: auto !important;
             }
 
-            table.p.article-h2{
+            .p.article-h2{
                 margin-left: 20px !important;
                 margin-right: 20px !important;
 
@@ -1166,13 +1167,21 @@
             table.button{
                 width:50%;
                 overflow:visible;
-                margin-left: 10px;
+
             }
 
-            .p.article-h2{
+            p.article-h2, p.article-author, p.sectionHeader, p.tweetText{
                 width:50%!important;
             }
 
+            p.sectionHeader{
+                text-align:left;
+                font-size:28px;
+                line-height:30px;
+                font-weight: 400;
+            }
+
+        
         }
 
         </style>
