@@ -36,7 +36,7 @@
         .ExternalClass td,
         .ExternalClass div {
         	line-height: 100% !important;
-            margin:0 !important;
+           /* margin:0 !important;*/
         }
 
         #backgroundTable {
@@ -835,6 +835,7 @@
         	font-weight: 100;
         	padding-top: 30px;
         }
+        
 
         p.splashArticle-h1{
         	margin-bottom:0;
@@ -842,6 +843,7 @@
         	font-size: 36px;
         	color: #464646;
         	line-height:42px;
+            padding-left:30px;
         }
 
 
@@ -850,6 +852,7 @@
         	font-family: Helvetica;
         	font-size: 16px;
         	color: #262626;
+            padding-left:30px;
         }
 
         p.splashArticle-author{
@@ -859,6 +862,7 @@
         	color: #27565D;
         	font-style: italic;
         	line-height:32px;
+            padding-left:30px;
 
         }
 
@@ -1180,8 +1184,21 @@
             p.article-friends{
                 
             }
+
+            p.splashArticle-h1, p.splashArticle-date, p.splashArticle-author{
+                padding-left:0px;
+            }
         
         }
+
+/*<!--[if !gt mso 9]><!-- -->
+        p, p.article-h2, p.article-author, p.article-date{
+            line-height:100%;
+
+        }
+<!--<![endif]-->
+<!--[endif]-->*/
+
 
         </style>
     </head>
@@ -1586,9 +1603,10 @@
     																<tbody><tr>
 
     																	<td class="center">
+                                                                        <center>
 
     																		<p class="sectionHeader">connect with us</p>
-    																		<center>
+
     																			<a href="http://sunlightfoundation.com/blog/"><img class="socialLogo" src="http://assets.sunlightfoundation.com.s3.amazonaws.com/email/Email-Images/twitter.png"></a>
     																			<a href="http://sunlightfoundation.com/blog/"><img class="socialLogo" src="http://assets.sunlightfoundation.com.s3.amazonaws.com/email/Email-Images/facebook.png"></a>
     																		</center>
@@ -1622,7 +1640,14 @@
 
     								</td>
     							</tr>
-                                 <table class="row footer">
+                                  <!-- End of Footer -->
+            </center>
+            </td>
+        </tr>
+    </table>
+
+    						</tbody></table>
+<table class="row footer">
                 <tr>
                     <td align="center" class="center">
                         <table class="container">
@@ -1661,13 +1686,7 @@
                         </table>
                     </td>
                 </tr>
-            </table> <!-- End of Footer -->
-            </center>
-            </td>
-        </tr>
-    </table>
-    						</tbody></table>
-
+            </table>
 
     						<td class="expander"></td>
     					</tr>
