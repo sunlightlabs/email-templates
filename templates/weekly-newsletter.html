@@ -249,6 +249,10 @@
         	padding-left: 10px;
         }
 
+        table.columns .left-text-pad-custom{
+        	padding-left:50px;
+        }
+
         table.columns .right-text-pad,
         table.columns .text-pad-right,
         table.column .right-text-pad,
@@ -357,7 +361,7 @@
         	font-weight: bold;
         }
 
-        td.tweetText.left-text-pad {
+        td.tweetText.left-text-pad-custom {
   			font-size: 26px;
   			font-family: Georgia,serif;
   			line-height: 36px;
@@ -982,6 +986,15 @@
         	line-height: 32px;
         	color: ##3D3D3D;
         	margin-bottom:0;
+        }
+
+        td.tweetHandle.left-text-pad-custom {
+  			font-family: Helvetica, arial, sans-serif;
+  			font-weight: 900;
+  			font-size: 16px;
+  			line-height: 32px;
+  			color: ##3D3D3D;
+  			margin-bottom: 0;
 
         }
 
@@ -1258,15 +1271,15 @@
 													<td class="expander"></td>
 												</tr>
 												<tr>
-													<td class="center panel">
+													<!-- <td class="center"> -->
 													
-													<tr>
-														<center>
-														<td class="title-text">This Week in Sunlight</td>
-														</center>
-														</tr>
 													
-													</td>
+														
+														<td class="title-text center"><center>This Week in Sunlight</center></td>
+														
+														
+													
+													<!-- </td> -->
 
 													<td class="expander"></td>
 												</tr>
@@ -1283,6 +1296,8 @@
 					<br>
 					<!-- Header Ends -->
 					<!-- Body Content Begins-->
+
+
 					<table class="container">
 						<tr>
 							<td>
@@ -1307,8 +1322,9 @@
 											<table class="seven columns">
 												<tr>
 
-
-													<a href="#"><td class="splashArticle-h1">47 groups rally around FOIA reform as bill moves to Senate floor</td></a>
+													<tr>
+													<td class="splashArticle-h1"><a href="#">47 groups rally around FOIA reform as bill moves to Senate floor</a></td>
+													</tr>
 
 													<tr>
 														<td class="splashArticle-author">by Emily Shaw</td>
@@ -1495,13 +1511,13 @@
 																				</tr>
 																				
 																				<tr>
-																					<td class="tweetHandle left-text-pad">@<a href="#">Sunfoundation</a></td>
+																					<td class="tweetHandle left-text-pad-custom">@<a href="#">Sunfoundation</a></td>
 																				</tr>
 																				<tr>
-																					<td class="tweetText left-text-pad">Great reporting by @<a href="#">nancyscola</a>-Dirty data: Why '4M public comments' on #netneutrality might not be what they seem <a href="#">http://wpo.st/ctVNy</a></td>
+																					<td class="tweetText left-text-pad-custom">Great reporting by @<a href="#">nancyscola</a>-Dirty data: Why '4M public comments' on #netneutrality might not be what they seem <a href="#">http://wpo.st/ctVNy</a></td>
 																				</tr>
 																				<tr>
-																					<td class="tweetView right-text-pad"><a href="#">View on Twitter</a></td>
+																					<td class="tweetView left-text-pad-custom"><a href="#">View on Twitter</a></td>
 																				</tr>
 
 																			</td>
@@ -1517,50 +1533,37 @@
 												</td>
 											</tr>
 										</table>
-
-										<table class="container">
-											<tr>
+							<table class="container">
+											<tbody><tr>
 												<td>
 
 													<table class="row">
-														<tr>
-															<td class="wrapper">
-
-																<table class="twelve columns">
-																	<tr>
-																		<td class="center panel">
-																			<center>
-
-																				<img class="center" src="http://assets.sunlightfoundation.com.s3.amazonaws.com/email/Email-Images/hand-shake.png">	
-																			</center>
-																			<tr>
-																				<td class="sectionHeader">From our Friends</td>
-																			</tr>
-
-																		</td>
-																		<td class="expander"></td>
-																	</tr>
-																</table>
-
-															</td>
+														<tbody><tr>
 															<td class="wrapper last">
 
+																<table class="twelve columns">
+																	<tbody>
+																		<tr>
+																			<tr>
+																				<td class="sectionHeader">From our friends</td>
+																				
+																			<td class="center">
 
+																				
+																				<tr>
+																					<center>
+																						<img class="center" src="http://assets.sunlightfoundation.com.s3.amazonaws.com/email/Email-Images/hand-shake.png">
+																					</center>
+																				</tr>
+																			</td>
+																		</tr>
+																	</tbody>
 
-
-															</td>
-														</tr>
-													</table>
-
-												</td>
-											</tr>
-										</table>
-
-
-
-									</td>
-								</tr>
-							</table>
+																</td>
+																<td class="expander"></td>
+															</tr>
+														</tbody></table>
+									
 
 							<br>
 							<!-- Header Ends -->
@@ -1644,12 +1647,12 @@
 																<table class="twelve columns">
 																	<tbody>
 																		<tr>
-
+																			<tr>
+																				<td class="sectionHeader">connect with us</td>
+																				
 																			<td class="center">
 
-																				<tr>
-																					<td class="sectionHeader">connect with us</td>
-																				</tr>
+																				
 																				<tr>
 																					<center>
 																						<a href="http://sunlightfoundation.com/blog/"><img class="socialLogo" src="http://assets.sunlightfoundation.com.s3.amazonaws.com/email/Email-Images/twitter.png"></a>
