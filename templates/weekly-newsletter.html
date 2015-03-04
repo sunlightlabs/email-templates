@@ -135,7 +135,7 @@
 
         table.columns td,
         table.column td {
-        	padding: 0px 0px 10px;
+        	/*padding: 0px 0px 10px;*/
         }
 
         table.columns td.sub-columns,
@@ -935,30 +935,24 @@
         }
 
         td.article-friends{
-        	margin-bottom:0;
         	font-family: Georgia, serif;
         	font-size: 18px;
-        	margin-bottom:4px;
         	line-height:20px;
 
         }
 
         td.article-friends-name{
-        	margin-bottom:0;
         	font-family:Georgia, serif;
         	font-size: 16px;
         	color: #8B3C04;
         	font-style: italic;
-        	margin-bottom:4px;
         	line-height:20px;
         }
 
         td.article-friends-date{
-        	margin-bottom:0;
         	font-family: Helvetica, Arial, sans-serif;
         	font-size: 16px;
-        	color: #262626;
-        	margin-bottom:30px;
+        	color: #262626; 
         	line-height:20px;
         }
 
@@ -967,8 +961,7 @@
         .row.tweetBox{
         	height:100%;
         	background:#f1dc57;
-        	padding:50px;
-        	/**margin: 50px 0 20px 0;**/
+        	margin: 50px 0 20px 0;
         	display: block;
         	position: relative;
         	background-image: url(http://assets.sunlightfoundation.com.s3.amazonaws.com/email/Email-Images/cap-building.png);
@@ -1470,8 +1463,9 @@
 											</tr>
 										</table>
 
+									
 
-										<table class="row" style="background-color:#f1dc57;"> <!-- Styles go on the row -->
+										<table class="row tweetBox"> <!-- style="background-color:#f1dc57;" --> <!-- Styles go on the row -->
 											<tr>
 												<td class="center" align="center"> <!-- Center the container -->
 													<center>
@@ -1486,11 +1480,11 @@
 																			<td>
 
 																				<tr>
-																<td class="sectionHeader">Tweet of the Week</td>
-																</tr>
-																</tr>
+																				<td class="sectionHeader">Tweet of the Week</td>
+																				</tr>
+																				
 																				<tr>
-																					<td class="tweetHandle">@<a href="#">Sunfoundation</a></td>
+																					<td class="tweetHandle" "left-text-pad">@<a href="#">Sunfoundation</a></td>
 																				</tr>
 																				<tr>
 																					<td class="tweetText">Great reporting by @<a href="#">nancyscola</a>-Dirty data: Why '4M public comments' on #netneutrality might not be what they seem <a href="#">http://wpo.st/ctVNy</a></td>
