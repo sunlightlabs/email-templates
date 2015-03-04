@@ -828,7 +828,7 @@
 
         /**-------------------------------------Type Styles**/
 
-        .title-text {
+        td.title-text {
         	font-family: Helvetica, Arial, sans-serif;
         	font-size: 30px;
         	color: #464646;
@@ -838,7 +838,7 @@
         }
         
 
-        p.splashArticle-h1{
+        td.splashArticle-h1{
         	margin-bottom:0;
         	font-family: Georgia, serif;
         	font-size: 36px;
@@ -848,7 +848,7 @@
         }
 
 
-        p.splashArticle-date{
+        td.splashArticle-date{
         	margin-bottom:0;
         	font-family: Helvetica;
         	font-size: 16px;
@@ -856,7 +856,7 @@
             padding-left:30px;
         }
 
-        p.splashArticle-author{
+        td.splashArticle-author{
         	margin-bottom:0;
         	font-family: Georgia, serif;
         	font-size: 18px;
@@ -867,7 +867,7 @@
 
         }
 
-        p.splashArticle{
+        td.splashArticle{
         	margin-bottom:0;
         	font-family: Helvetica, Arial, sans-serif;
         	font-size: 18px;
@@ -895,7 +895,7 @@
         }
 
 
-        p.article-h2{
+        td.article-h2{
         	margin-bottom:0;
         	font-family: Georgia, Times, serif;
         	font-size: 22px;
@@ -905,7 +905,7 @@
 
         }
 
-        p.article-author{
+        td.article-author{
         	margin-bottom:0;
         	font-family: Georgia, serif;
         	font-size: 16px;
@@ -914,7 +914,7 @@
         	font-style: italic;
         }
 
-        p.article-date{
+        td.article-date{
         	margin-bottom:0;
         	font-family: Helvetica, Arial, sans-serif;
         	font-size: 16px;
@@ -923,7 +923,7 @@
         	color: #262626;
         }
 
-        p.sectionHeader{
+        td.sectionHeader{
         	margin-bottom:0;
         	font-family: helvetica;
         	font-weight: bold; 
@@ -934,7 +934,7 @@
         	padding-top: 20px;
         }
 
-        p.article-friends{
+        td.article-friends{
         	margin-bottom:0;
         	font-family: Georgia, serif;
         	font-size: 18px;
@@ -943,7 +943,7 @@
 
         }
 
-        p.article-friends-name{
+        td.article-friends-name{
         	margin-bottom:0;
         	font-family:Georgia, serif;
         	font-size: 16px;
@@ -953,7 +953,7 @@
             line-height:20px;
         }
 
-        p.article-friends-date{
+        td.article-friends-date{
         	margin-bottom:0;
         	font-family: Helvetica, Arial, sans-serif;
         	font-size: 16px;
@@ -964,9 +964,9 @@
 
         /**----------------------------------------------------------Twitter Box styles**/
 
-        .tweetBox{
+        .row.tweetBox{
         	height:100%;
-        	background-color:#f1dc57;
+        	background:#f1dc57;
         	padding:50px;
         	/**margin: 50px 0 20px 0;**/
         	display: block;
@@ -976,7 +976,7 @@
         	background-position: left -30px bottom -20px;
         }
 
-        p.tweetHandle{
+        td.tweetHandle{
         	font-family: Helvetica, arial, sans-serif;
         	font-weight: 900;
         	font-size: 16px;
@@ -986,14 +986,14 @@
 
         }
 
-        p.tweetText{
+        td.tweetText{
         	font-family: Georgia, serif;
         	font-size: 22px;
         	line-height: 32px;
         	color: ##3D3D3D;
         }
 
-        p.tweetView{
+        td.tweetView{
         	font-family: helvetica, arial, sans-serif;
         	font-size: 12px;
         	color: #689FA8;
@@ -1153,13 +1153,13 @@
                 height: auto !important;
             }
 
-            .p.article-h2{
+            td.article-h2{
                 margin-left: 20px !important;
                 margin-right: 20px !important;
 
             }
 
-            p.splashArticle-h1{
+            td.splashArticle-h1{
                 margin:0;
                 
             }
@@ -1170,23 +1170,23 @@
 
             }
 
-            p.article-h2, p.article-author, p.sectionHeader, p.tweetText{
+            td.article-h2, td.article-author, td.sectionHeader, td.tweetText{
                
                 padding-top: 0px;
             }
 
-            p.sectionHeader{
+            td.sectionHeader{
                 text-align:center;
                 font-size:20px;
                 line-height:30px;
                 font-weight: 800;
             }
 
-            p.article-friends{
+            td.article-friends{
                 
             }
 
-            p.splashArticle-h1, p.splashArticle-date, p.splashArticle-author{
+            td.splashArticle-h1, td.splashArticle-date, td.splashArticle-author{
                 padding-left:0px;
             }
         
@@ -1259,11 +1259,11 @@
     												<td class="expander"></td>
     											</tr>
     											<tr>
-    												<td class="center">
+    												
     													<center>
-    														<p class="title-text">This Week in Sunlight</p>
+    														<td class="title-text">This Week in Sunlight</td>
     													</center>
-    												</td>
+    												
     												<td class="expander"></td>
     											</tr>
     										</table>
@@ -1302,14 +1302,19 @@
 
     										<table class="seven columns">
     											<tr>
-    												<td>
+    												
 
-    													<a href="#"><p class="splashArticle-h1">47 groups rally around FOIA reform as bill moves to Senate floor</p></a>
-    													<p class="splashArticle-author">by Emily Shaw</p>
-    													<p class="splashArticle-date">February 6, 2015</p>
+    													<a href="#"><td class="splashArticle-h1">47 groups rally around FOIA reform as bill moves to Senate floor</td></a>
+    													
+    											<tr>
+    													<td class="splashArticle-author">by Emily Shaw</td>
+    											</tr>
+    											<tr>
+    													<td class="splashArticle-date">February 6, 2015</td>
+    											</tr>
 
 
-    												</td>
+    												
     												<td class="expander"></td>
     											</tr>
     										</table>
@@ -1324,10 +1329,10 @@
 
     										<table class="twelve columns">
     											<tr>
-    												<td>
-    													<p class="splashArticle">As Sunlight explores the public use of microdata, we are also exploring the practical, legal and ethical challenges of working with individual-level data.</p>
+    												
+    													<td class="splashArticle">As Sunlight explores the public use of microdata, we are also exploring the practical, legal and ethical challenges of working with individual-level data.</td>
 
-    												</td>
+    												
     												<td class="expander"></td>
     											</tr>
     										</table>
@@ -1362,14 +1367,57 @@
     														<td class="wrapper">
 
     															<table class="twelve columns">
+    															<tr>
     																<tr>
-    																	<td>
+    																		<td class="article-h2"><a href="#">Has the U.S. taken the lead in open data practices globally?</a></td>
+    																</tr>
+    																<tr>
+    																		<td class="article-author">by Matthew Rumsey and Sean Vitka and John Wonderlich</td>
+    																</tr>
+    																<tr>
+    																		<td class="article-date">February 9, 2014</td>
+    																</tr>
+    																
 
-    																		<p class="article-h2"><a href="#">Has the U.S. taken the lead in open data practices globally?</a></p>
-    																		<p class="article-author">by Matthew Rumsey and Sean Vitka and John Wonderlich</p>
-    																		<p class="article-date">February 9, 2014</p>
+    																	
+    																	<td class="expander"></td>
+    																</tr>
+    															</table>
 
-    																	</td>
+    														</td>
+    														<td class="wrapper last">
+
+
+    														</td>
+    													</tr>
+    												</table>
+
+    											</td>
+    										</tr>
+    									</table>
+
+    									<table class="container">
+    										<tr>
+    											<td>
+
+    												<table class="row">
+    													<tr>
+    														<td class="wrapper">
+
+    															<table class="twelve columns">
+    															<tr>
+    																<tr>
+    																		<td class="article-h2"><a href="#">Has the U.S. taken the lead in open data practices globally?</a></td>
+    																</tr>
+    																<tr>
+    																		<td class="article-author">by Matthew Rumsey and Sean Vitka and John Wonderlich</td>
+    																</tr>
+    																<tr>
+    																		<td class="article-date">February 9, 2014</td>
+    																</tr>
+    		
+
+
     																	<td class="expander"></td>
     																</tr>
     															</table>
@@ -1396,54 +1444,16 @@
 
     															<table class="twelve columns">
     																<tr>
-    																	<td>
-
-    																		<p class="article-h2"><a href="#">Has the U.S. taken the lead in open data practices globally?</a></p>
-    																		<p class="article-author">by Matthew Rumsey and Sean Vitka and John Wonderlich</p>
-    																		<p class="article-date">February 9, 2014</p>
-
-    																	</td>
-    																	<td class="expander"></td>
-    																</tr>
-    															</table>
-
-    														</td>
-    														<td class="wrapper last">
-
-
-    														</td>
-    													</tr>
-    												</table>
-
-    											</td>
-    										</tr>
-    									</table>
-
-    									<table class="container">
-    										<tr>
-    											<td>
-
-    												<table class="row">
-    													<tr>
-    														<td class="wrapper">
-
-    															<table class="twelve columns">
     																<tr>
-    																	<td>
-
-    																		<p class="article-h2"><a href="#">Has the U.S. taken the lead in open data practices globally?</a></p>
-                                                                            </td>
-                                                                            </tr>
-                                                <tr>
-                                                                        <td>
-    																		<p class="article-author">by Matthew Rumsey and Sean Vitka and John Wonderlich</p>
-                                                                            </td>
-                                                                            </tr>
-    																		<p class="article-date">February 9, 2014</p>
-                                                                            </td>
-                                                                            </tr>
-
-    																	</td>
+    																		<td class="article-h2"><a href="#">Has the U.S. taken the lead in open data practices globally?</a></td>
+    																</tr>
+    																<tr>
+    																		<td class="article-author">by Matthew Rumsey and Sean Vitka and John Wonderlich</td>
+    																</tr>
+    																<tr>
+    																		<td class="article-date">February 9, 2014</td>
+    																</tr>
+    		
     																	<td class="expander"></td>
     																</tr>
     															</table>
@@ -1472,12 +1482,20 @@
     																<tr>
     																	<td bgcolor="#f1dc57" style="background-color:#f1dc57; padding:0;">
 
-    																		<div class="tweetBox">
-    																			<p class="sectionHeader">Tweet of the Week</p>
-    																			<p class="tweetHandle">@<a href="#">Sunfoundation</a></p>
-    																			<p class="tweetText">Great reporting by @<a href="#">nancyscola</a>-Dirty data: Why '4M public comments' on #netneutrality might not be what they seem <a href="#">http://wpo.st/ctVNy</a></p>
-    																			<p class="tweetView"><a href="#">View on Twitter</a></p>
-    																		</div>
+    																		<table class="row tweetBox">
+    																		<tr>
+    																			<td class="sectionHeader">Tweet of the Week</td>
+    																		</tr>
+    																		<tr>
+    																			<td class="tweetHandle">@<a href="#">Sunfoundation</a></td>
+    																		</tr>
+    																		<tr>
+    																			<td class="tweetText">Great reporting by @<a href="#">nancyscola</a>-Dirty data: Why '4M public comments' on #netneutrality might not be what they seem <a href="#">http://wpo.st/ctVNy</a></td>
+    																		</tr>
+    																		<tr>
+    																			<td class="tweetView"><a href="#">View on Twitter</a></td>
+    																		</tr>
+    																		</table>
 
     																	</td>
     																	<td class="expander"></td>
@@ -1511,7 +1529,9 @@
 
     																			<img style="float:none!important; margin-top: 50px;"src="http://assets.sunlightfoundation.com.s3.amazonaws.com/email/Email-Images/hand-shake.png">	
     																		</center>
-    																		<p class="sectionHeader">From our Friends</p>
+    																		<tr>
+    																		<td class="sectionHeader">From our Friends</td>
+    																		</tr>
 
     																	</td>
     																	<td class="expander"></td>
@@ -1551,16 +1571,28 @@
 
     												<table class="six columns">
     													<tr>
-    														<td>
-    															<p class="article-friends"><a href="#">Sharing sensitive data within government</a></p>
-    															<p class="article-friends-name">A Sample Orginization</p>
-    															<p class="article-friends-date">February 12, 2014</p>
+    														<tr>
+    															<td class="article-friends"><a href="#">Sharing sensitive data within government</a></td>
+    															</tr>
+    														<tr>
+    															<td class="article-friends-name">A Sample Orginization</td>
+    															</tr>
+    														<tr>
+    															<td class="article-friends-date">February 12, 2014</td>
+    															</tr>
+    														<tr>
 
-    															<p class="article-friends"><a href="#">Sharing sensitive data within government</a></p>
-    															<p class="article-friends-name">A Sample Orginization</p>
-    															<p class="article-friends-date">February 12, 2014</p>
+    															<td class="article-friends"><a href="#">Sharing sensitive data within government</a></td>
+    															</tr>
+    														<tr>
+    															<td class="article-friends-name">A Sample Orginization</td>
+    															</tr>
+    														<tr>
+    															<td class="article-friends-date">February 12, 2014</td>
+    															</tr>
+    														
 
-    														</td>
+    														
     														<td class="expander"></td>
     													</tr>
     												</table>
@@ -1570,20 +1602,25 @@
 
     												<table class="six columns">
     													<tr>
-    														<td>
+    														<tr>
+    															<td class="article-friends"><a href="#">Sharing sensitive data within government</a></td>
+    															</tr>
+    														<tr>
+    															<td class="article-friends-name">A Sample Orginization</td>
+    															</tr>
+    														<tr>
+    															<td class="article-friends-date">February 12, 2014</td>
+    															</tr>
+    														<tr>
 
-    															<p class="article-friends"><a href="#">Sharing sensitive data within government</a></p>
-    															<p class="article-friends-name">A Sample Orginization</p>
-    															<p class="article-friends-date">February 12, 2014</p>
-
-    															<p class="article-friends"><a href="#">Sharing sensitive data within government</a></p>
-    															<p class="article-friends-name">A Sample Orginization</p>
-    															<p class="article-friends-date">February 12, 2014</p>
-
-
-
-
-    														</td>
+    															<td class="article-friends"><a href="#">Sharing sensitive data within government</a></td>
+    															</tr>
+    														<tr>
+    															<td class="article-friends-name">A Sample Orginization</td>
+    															</tr>
+    														<tr>
+    															<td class="article-friends-date">February 12, 2014</td>
+    															</tr>
     														<td class="expander"></td>
     													</tr>
     												</table>
@@ -1604,10 +1641,11 @@
     																<tbody><tr>
 
     																	<td class="center">
-                                                                        <center>
-
-    																		<p class="sectionHeader">connect with us</p>
-
+                                                                        
+                                                                        <tr>
+    																		<td class="sectionHeader">connect with us</td>
+    																		</tr>
+    																		<center>
     																			<a href="http://sunlightfoundation.com/blog/"><img class="socialLogo" src="http://assets.sunlightfoundation.com.s3.amazonaws.com/email/Email-Images/twitter.png"></a>
     																			<a href="http://sunlightfoundation.com/blog/"><img class="socialLogo" src="http://assets.sunlightfoundation.com.s3.amazonaws.com/email/Email-Images/facebook.png"></a>
     																		</center>
