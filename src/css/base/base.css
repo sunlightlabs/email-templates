@@ -1,0 +1,143 @@
+/* Ink Framework Overides */
+
+hr {
+    color: #C1BAA9;
+    height: 0;
+    background-color: transparent;
+    border: none;
+    border-top: dashed 1px #C1BAA9;
+    height: 20px;
+}
+
+body, table.body, h1, h2, h3, h4, h5, h6, p, td {
+    color: #333333;
+    font-family: "Helvetica", "Arial", sans-serif;
+    line-height: 2;
+}
+
+body, table.body, p, td {
+    font-size: 14px;
+    line-height:20px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+a {
+    color: #005D6E;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #42A5B3 !important;
+}
+
+a:active {
+    color: #42A5B3 !important;
+}
+
+a:visited {
+    color: #42A5B3 !important;
+}
+
+.panel {
+    background: #f1f8f0;
+}
+
+table.button td,
+table.tiny-button td,
+table.small-button td,
+table.medium-button td,
+table.large-button td {
+    background: #42A5B3;
+    border: 3px solid #137B80;
+}
+
+
+table.button td a,
+table.tiny-button td a,
+table.small-button td a,
+table.medium-button td a,
+table.large-button td a {
+    font-weight: normal;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+}
+
+
+/* Sunlight Header Styles */
+
+.header-share-label {
+  color: #AFA89C;
+  font-weight: normal;
+  font-size: 12px;
+}
+
+.header-share-label a{
+  color: #AFA89C;
+  text-decoration: underline;
+}
+
+.header {
+    background: #F4F4F2;
+}
+
+.header-logo {
+    background: #FFF;
+}
+
+
+/* Sunlight Footer Styles */
+
+.footer h5 {
+    padding-bottom: 5px;
+    padding-top: 10px;
+    text-transform: uppercase;
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.row.footer {
+    background: #F7F6F4;
+    border-top: solid 2px #C1BAA9;
+    border-bottom: solid 2px #C1BAA9;
+}
+
+.row.footer .footer-text {
+    font-size: 12px;
+}
+
+.mission {
+    font-family: Georgia, serif;
+    font-style: italic;
+    line-height: 23px;
+    font-size: 11px;
+    color: #635F5D;
+}
+
+
+/* Sunlight Callout Styles */
+
+.callout .wrapper {
+    padding-bottom: 20px;
+}
+
+.callout .panel {
+    background: #ECF8FF;
+    border-color: #b9e5ff;
+}
+
+
+/* Hidden email preview text */
+
+td.email-preview-text {
+    visibility: hidden;
+    display: none;
+    padding: 0 !important;
+    margin:0;
+    height:0px;
+    font-size:1px;
+    color: #dce3db;
+}
