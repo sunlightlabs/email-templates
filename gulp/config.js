@@ -1,14 +1,12 @@
 module.exports = {
-  paths: {
-    template: 'src/template/*',
-    partials: 'src/partials/*',
-    css : 'src/css/*',
-    img : 'src/img/**/*',
-    dist: {
-      all  : 'dist/**/*',
-      inlined: 'dist/inlined/*',
-      template: 'dist/template/*',
-      img  : 'dist/img/**/*'
+    paths: {
+        template: 'src/template/*.html',
+        partials: 'src/partials/*.html',
+        css: 'src/css/*.css',
+        dist: {
+            template: 'dist/template/*.html',
+            css: 'dist/css/',
+        },
+        inlined: 'inlined/',
     }
-  }
 };

@@ -1,9 +1,10 @@
 var gulp = require('gulp'),
     paths = require('../config').paths;
 
-gulp.task('watch', ['connect'], function () {
-  gulp.watch([paths.template, paths.partials]).on('change', function () {
-    console.log('you made a change to a template');
-    gulp.run('includePartials');
-  });
+// Runs the build task if there are any changes to source files
+
+gulp.task('watch', ['connect'], function() {
+    gulp.watch(paths.css, ['build']);
+    gulp.watch(paths.template, ['build']);
+    gulp.watch(paths.partials, ['build']);
 });
