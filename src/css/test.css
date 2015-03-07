@@ -49,29 +49,6 @@
     }
 }
 
-.header-share-label {
-  color: #AFA89C;
-  font-weight: normal;
-  font-size: 12px;
-}
-
-.header-share-label a{
-  color: #AFA89C;
-  text-decoration: underline;
-}
-
-.callout .wrapper {
-    padding-bottom: 20px;
-}
-
-.callout .panel {
-    background: #ECF8FF;
-    border-color: #b9e5ff;
-}
-
-.header {
-    background: #e5e3dc;
-}
 
 .issue-number {
     font-family: georgia, times new roman, times, serif;
@@ -80,68 +57,10 @@
     color: #978F80;
 }
 
-.header-logo {
-    background: #FFF;
-}
-
 .header-logo a.logo {
     display: inline-block;
 }
 
-.footer h5 {
-    padding-bottom: 5px;
-    padding-top: 10px;
-    text-transform: uppercase;
-    font-family: arial, sans-serif;
-    font-size: 14px;
-    font-weight: bold;
-}
-
-table.columns .text-pad {
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-table.columns .left-text-pad {
-    padding-left: 10px;
-}
-
-table.columns .right-text-pad {
-    padding-right: 10px;
-}
-
-@media only screen and (max-width: 600px) {
-
-    table[class="body"] .right-text-pad {
-        padding-left: 10px !important;
-    }
-
-    table[class="body"] .left-text-pad {
-        padding-right: 10px !important;
-    }
-}
-
-/* Footer */
-.row.footer {
-    background: #F7F6F4;
-    border-top: solid 2px #C1BAA9;
-    border-bottom: solid 2px #C1BAA9;
-}
-
-.row.footer .footer-text {
-    font-size: 12px;
-}
-
-/* hidden email preview text */
-td.email-preview-text {
-    visibility: hidden;
-    display: none;
-    padding: 0 !important;
-    margin:0;
-    height:0px;
-    font-size:1px;
-    color: #dce3db;
-}
 
 /* Highlight Nav */
 
