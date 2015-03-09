@@ -4,7 +4,7 @@ var gulp = require('gulp');
 
 // Build inlined templates, outputs to /inlined
 
-gulp.task('build', ['buildCss', 'buildMarkup'], function() {
+gulp.task('build', ['buildCss', 'buildMarkup', 'buildImg'], function() {
     return gulp.src(paths.dist.template)
     .pipe(premailer())
     .pipe(gulp.dest(paths.inlined));

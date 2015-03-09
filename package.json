@@ -16,6 +16,7 @@
     "gulp": "^3.8.10",
     "gulp-connect": "^1.0.9",
     "gulp-file-include": "^0.8.0",
+    "gulp-imagemin": "^2.2.1",
     "gulp-livereload": "^1.2.0",
     "gulp-premailer": "^0.4.0",
     "gulp-streamify": "~0.0.4",

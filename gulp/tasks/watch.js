@@ -7,4 +7,5 @@ gulp.task('watch', ['connect'], function() {
     gulp.watch(paths.css, ['build']);
     gulp.watch(paths.template, ['build']);
     gulp.watch(paths.partials, ['build']);
+    gulp.watch(paths.img, ['build']);
 });
