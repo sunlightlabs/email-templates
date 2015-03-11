@@ -70,14 +70,18 @@ table.large-button td a {
 
 /* Sunlight Header Styles */
 
-.header-share-label {
+.headershare--label {
   color: #999999;
   font-size: 12px;
 }
 
-.header-share-label a{
+.headershare--label a{
   color: #999999;
   text-decoration: none;
+}
+
+img.headershare--social {
+  vertical-align: middle !important;
 }
 
 .header {
@@ -129,12 +133,20 @@ table.large-button td a {
 
 /* Hidden email preview text */
 
-td.email-preview-text {
+span.email-preview-text {
     visibility: hidden;
     display: none;
     padding: 0 !important;
     margin:0;
     height:0px;
     font-size:1px;
-    color: #dce3db;
+    color: #ffffff;
+}
+
+@media only screen and (max-width: 600px) {
+    table[class="body"] img.headershare--social {
+      width: 20px !important;
+      height: 14px !important;
+      vertical-align: middle !important;
+    }
 }
