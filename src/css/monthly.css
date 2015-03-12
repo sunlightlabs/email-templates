@@ -1,0 +1,332 @@
+@@include('ink/ink.css')
+@@include('base/base.css')
+
+table.u-valignm,
+tr.u-valignm,
+td.u-valignm {
+    vertical-align: middle !important;
+}
+
+td.u-nobottompad {
+    padding-bottom: 0px !important;
+}
+
+/* Hero background image: "Data storm" by Dave Herholz, cropped (https://www.flickr.com/photos/dherholz/450303689) */
+/* Creative Commons License: Attribution-ShareAlike 2.0 Generic (https://creativecommons.org/licenses/by-sa/2.0) */
+.hero {
+    height: 390px;
+    width: 100%;
+    background-color: #ffcb15;
+    background-image: url(../img/monthly/cover-background.jpg);
+}
+
+.hero--title {
+    font-weight: bold;
+    padding-top: 50px;
+    color: #000000;
+    text-align: center;
+}
+
+td.hero--divider-wrapper {
+    padding-top: 3px !important;
+    width: 32%;
+}
+
+hr.hero--divider {
+    border-top: 1px solid #ffffff !important;
+}
+
+.hero--subtitle-wrapper {
+    width: 190px;
+    padding-left: 4px !important;
+    padding-right: 4px !important;
+}
+
+.hero--subtitle {
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.hero--text {
+    color: #000000;
+    font-size: 19px;
+    line-height: 34px;
+    text-align: center;
+}
+
+.article.row {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.article--img {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+}
+
+.article--img-full {
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.article--caption {
+    font-style: italic;
+    font-size: 16px;
+    text-align: center;
+}
+
+.article--header {
+    font-size: 22px;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+
+.article--text {
+    font-size: 16px;
+    line-height: 26px;
+    color: #222222;
+}
+
+a.article--button {
+    background-color: #fff9e1;
+    border: 2px solid #ffdb15;
+    color: #42a5b3;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+    width: 230px;
+    -webkit-text-size-adjust: none;
+    mso-hide: all;
+}
+
+.prompt {
+    background-color: #fff9e1;
+    border-top: 3px solid #ffdb15;
+    border-bottom: 3px solid #ffdb15;
+}
+
+.prompt table.columns td {
+    padding-bottom: 0px !important;
+}
+
+.prompt td.wrapper {
+    padding-bottom: 0px !important;
+    padding-top: 0px !important;
+}
+
+td.pad-left {
+    padding: 0px 0px 0px 25px !important;
+}
+
+td.pad-right {
+    padding: 0px 25px 0px 0px !important;
+}
+
+p.prompt--text {
+    font-size: 16px;
+    padding-bottom: 0px !important;
+    text-align: center;
+}
+
+.prompt--button-wrapper {
+    text-align: right;
+}
+
+a.prompt--button {
+    background-color: #ffffff;
+    border: 2px solid #42a5b3;
+    color: #42a5b3 !important;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 35px;
+    text-align: center;
+    text-decoration: none;
+    width: 145px;
+    -webkit-text-size-adjust: none;
+    mso-hide: all;
+}
+
+td.socialmedia--divider-wrapper {
+    padding-top: 5px !important;
+    width: 30%;
+}
+
+hr.socialmedia--divider {
+    border-top: solid 2px #ffdb15;
+}
+
+td.socialmedia--header-wrapper {
+    width: 200px;
+}
+
+.socialmedia--header {
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+
+.socialmedia--button-wrapper-left,
+.socialmedia--button-wrapper-right {
+    text-align: center;
+}
+
+a.socialmedia--twitter-button {
+    background-color: #55acee;
+    color: #ffffff !important;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+    width: 270px;
+    -webkit-text-size-adjust: none;
+    mso-hide: all;
+}
+
+a.socialmedia--facebook-button {
+    background-color: #3b5998;
+    color: #ffffff !important;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+    width: 270px;
+    -webkit-text-size-adjust: none;
+    mso-hide: all;
+}
+
+@media only screen and (max-width: 600px) {
+
+    table[class="body"] img.sunlight-logo {
+        max-width: 250px !important;
+        width: 100% !important;
+    }
+
+    table[class="body"] .row.hero {
+        display: table !important;
+    }
+
+    .hero--title {
+        padding-top: 30px !important;
+        line-height: 36px;
+    }
+
+    table[class="body"] table.columns td.hero--divider-wrapper {
+        width: 25% !important;
+    }
+
+    table[class="body"] table.columns td.hero--subtitle-wrapper {
+        width: 180px !important;
+    }
+
+    .hero--text {
+        font-size: 16px !important;
+        line-height: 28px !important;
+    }
+    
+    .row.article {
+        padding-top: 20px !important;
+    }
+
+    table[class="body"] img.article--img {
+        float: none !important;
+        margin: auto;
+        width: 120px !important;
+        height: 120px !important;
+    }
+    
+    .article--img-full {
+        padding-bottom: 10px !important;
+        padding-top: 10px !important;
+    }
+    .article--caption {
+        font-size: 14px !important;
+    }
+
+    .article--header,
+    .article--text,
+    .article--button-wrapper,
+    .article--button {
+        text-align: center !important;
+    }
+
+    .article--text {
+        font-size: 14px !important;
+        line-height: 22px !important;
+        max-width: 450px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .article--button {
+        font-size: 14px !important;
+    }
+
+    .prompt table.columns td {
+        padding-bottom: 0px !important;
+    }
+
+    .prompt td.wrapper {
+        padding-bottom: 0px !important;
+        padding-top: 0px !important;
+    }
+
+    table[class="body"] img.prompt--logo {
+        height: 30px !important;
+    }
+
+    .prompt table.columns .pad-left,
+    .prompt table.columns .pad-right {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+
+    p.prompt--text {
+        font-size: 14px !important;
+        line-height: 24px !important;
+    }
+
+    .prompt--button-wrapper {
+        text-align: center !important;
+        margin-bottom: 15px !important;
+    }
+
+    .prompt--button {
+        font-size: 14px !important;
+    }
+
+    td.socialmedia--divider-wrapper {
+        width: 20% !important;
+        padding-top: 5px !important;
+    }
+
+    td.socialmedia--header-wrapper {
+        width: 200px !important;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    
+    table[class="body"] table.columns td.hero--divider-wrapper {
+        width: 15% !important;
+    }
+
+    td.socialmedia--divider-wrapper {
+       width: 15% !important;
+    }
+}
+
+/*
+<div><!--[if mso]>
+  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://" style="height:40px;v-text-anchor:middle;width:200px;" arcsize="5%" strokecolor="#FFDB15" fillcolor="#FFF9E1">
+    <w:anchorlock/>
+    <center style="color:#1B75B9;font-family:sans-serif;font-size:13px;font-weight:bold;">Show me the button!</center>
+  </v:roundrect>
+<![endif]-->
+<a href="http://"">Show me the button!</a></div>
+*/
+
