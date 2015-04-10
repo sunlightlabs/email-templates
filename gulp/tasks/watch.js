@@ -3,7 +3,7 @@ var gulp = require('gulp'),
 
 // Runs the build task if there are any changes to source files
 
-gulp.task('watch', ['connect'], function() {
+gulp.task('watch', ['browserSync'], function() {
     gulp.watch(paths.css, ['build']);
     gulp.watch(paths.template, ['build']);
     gulp.watch(paths.partials, ['build']);
