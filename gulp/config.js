@@ -7,7 +7,7 @@ module.exports = {
         dist: {
             template: 'dist/template/*.html',
             css: 'dist/css/',
-            img: 'dist/img/'
+            img: './dist/img/**/*'
         },
         inlined: 'inlined/',
     }

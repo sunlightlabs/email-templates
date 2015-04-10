@@ -45,7 +45,7 @@ gulp.task('uploadImg', function () {
         },
         path = 'emails/';
     
-    return gulp.src('paths.dist.img')
+    return gulp.src(paths.dist.img)
     .pipe(awspublish.gzip({ ext: '.gz' }))
     .pipe(publisher.publish(headers, path))
     .pipe(publisher.cache())
