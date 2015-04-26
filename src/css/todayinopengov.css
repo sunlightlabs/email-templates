@@ -1,0 +1,37 @@
+@@include('ink/ink.css')
+@@include('base/base.css')
+
+h1.banner-header {
+    color: #ffffff;
+    font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    font-size: 29px;
+    font-weight:normal;
+    line-height: 200%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h3.section-header {
+    background-color: #E9E8E0;
+    border-top: solid 2px;
+    border-bottom: solid 2px;
+    color: #7C715E;
+    line-height: 200%;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom:20px;
+    margin-top:20px;
+    text-align:center;
+    text-transform: uppercase;
+}
+
+h2.intro-text {
+    font-size: 16px;
+    font-weight: normal;
+    font-style: italic;
+    font-family: georgia, times, serif;
+    line-height: 16px;
+}
+
+
+li { padding-bottom: 15px; }
