@@ -3,7 +3,7 @@ var gulp = require('gulp'),
     imagemin = require('gulp-imagemin');
 
 gulp.task('buildImg', function () {
-    return gulp.src(paths.img)
+    return gulp.src(paths.src.img)
     .pipe(imagemin({ optimizationLevel: 5 }))
-    .pipe(gulp.dest(paths.dist.img));
+    .pipe(gulp.dest(paths.build.imgDir));
 });

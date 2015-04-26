@@ -7,7 +7,7 @@ var gulp = require('gulp');
 gulp.task('browserSync', function() {
     browserSync({
         server: {
-            baseDir: "./dist",
+            baseDir: "./build",
             index: "base.html"
         },
         open: "external",

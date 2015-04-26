@@ -11,7 +11,7 @@ gulp.task('uploadImg', function () {
             'Cache-Control': 'max-age=315360000, no-transform, public'
         };
     
-    return gulp.src(paths.dist.img)
+    return gulp.src(paths.build.img)
     .pipe(rename(function (path) {
         path.dirname = 'emails/' + path.dirname;
     }))

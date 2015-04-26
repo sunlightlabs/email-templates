@@ -4,11 +4,11 @@ var gulp = require('gulp'),
 
 // Builds CSS from framework and override styles, outputs to dist/css
 
-gulp.task('buildCss', function () {
-    return gulp.src(paths.css)
+gulp.task('buildCss', function() {
+    return gulp.src(paths.src.css)
     .pipe(fileinclude({
         prefix: '@@',
         basepath: '@file'
     }))
-    .pipe(gulp.dest(paths.dist.css));
+    .pipe(gulp.dest(paths.build.cssDir));
 });

@@ -21,9 +21,9 @@
     "gulp-livereload": "^1.2.0",
     "gulp-premailer": "^0.4.0",
     "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.5.3",
     "gulp-streamify": "~0.0.4",
     "gulp-task-listing": "^0.2.2",
-    "gulp-uncss": "^1.0.0",
     "require-dir": "~0.1.0"
   },
   "scripts": {
