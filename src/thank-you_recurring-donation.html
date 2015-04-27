@@ -809,7 +809,7 @@
         }
 
         /* hidden email preview text */
-        td.email-preview-text {
+        span.email-preview-text {
             visibility: hidden;
             display: none;
             padding: 0 !important;
@@ -833,46 +833,47 @@
 </head>
 
 <body>
+<!-- Email Preview Text -->
+    <span class="email-preview-text">Thank you for your support of the Sunlight Foundation!</span>
+
 <!-- TemplateBeginEditable name="content" -->
     <table class="body">
         <tr>
             <td class="center" align="center" valign="top">
-            <center>
-                <table class="row header">
-                    <tr>
-                        <td align="center" class="center">
-                            <table class="container">
-                                <tr>
-                                    <td class="wrapper">
-                                        <table class="twelve columns">
-                                            <tr>
-                                                <td class="email-preview-text">
-                                                    Thank you for your support of the Sunlight Foundation!
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="six sub-columns">
-                                                    <span class="header-share-label">
-                                                        <a href="http://salsa4.salsalabs.com/o/51051/t/0/blastContent.jsp?email_blast_KEY=[[email_blast_KEY]]">View on the web</a> | <a href="http://sunlightfoundation.com/join/">Join us</a>
-                                                    </span>
-                                                </td>
+                <center>
+                    <table class="row header">
+                        <tr>
+                            <td align="center" class="center">
+                                <center>
+                                    <table class="container">
+                                        <tr>
+                                            <td class="wrapper last">
+                                                <table class="twelve columns">
+                                                    <tr>
+                                                        <td class="eight sub-columns">
+                                                            <span class="headershare--label">
+                                                                <a href="#">View on the web</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://sunlightfoundation.com/join/">Join us</a>
+                                                            </span>
+                                                        </td>
 
-                                                <td class="six sub-columns last" style="text-align:right; vertical-align:middle; float: none;">
-                                                    <span class="header-share-label">
-                                                        Follow Us:
-                                                        <a href="https://twitter.com/SunFoundation"><img alt="twitter" src= "http://assets.sunlightfoundation.com.s3.amazonaws.com/email/Email-Images/Twitter.png" style="display:inline; float: none;"/></a>
-                                                        <a href="https://www.facebook.com/sunlightfoundation"><img alt="facebook" src="http://assets.sunlightfoundation.com/email/Email-Images/Facebook.png" style="display:inline; float: none;"/></a>
-                                                    </span>
-                                                </td>
-                                                <td class="expander"></td>
-                                            </tr>
-                                        </table>
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                </table>
+                                                        <td class="four sub-columns last" style="text-align:right; vertical-align:middle; float: none;">
+                                                            <span class="headershare--label">
+                                                                <a href="https://twitter.com/SunFoundation"><img class="headershare--social" alt="Find us on Twitter" width="20" height="14" src= "http://assets.sunlightfoundation.com.s3.amazonaws.com/email/Email-Images/Twitter.png" style="display:inline; float: none;"/></a>
+                                                                <a href="https://www.facebook.com/sunlightfoundation"><img class="headershare--social" alt="Find us on Facebook" width="20" height="14" src= "http://assets.sunlightfoundation.com/email/Email-Images/Facebook.png" style="display:inline; float: none;"/></a>
+                                                            </span>
+                                                        </td>
+                                                        <td class="expander"></td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </center>
+                            </td>
+                        </tr>
+                    </table>
+
+                <!-- email branding starts -->
                 <table class="row header-logo">
                     <tr>
                         <td height="10"></td>
@@ -904,7 +905,7 @@
                 </table>
                 <br>
 
-
+                <!-- email content starts -->
                 <table class="container">
                     <tr>
                         <td>
@@ -918,8 +919,20 @@
                                                 <td>
 
                                                     <p>[[First_Name]],</p>
-                                                    <p>Thank you so much for supporting the Sunlight Foundation! You contribution has been received and you should receive a confirmation email once it has been processed.</p>
-                                                    <p>Sunlight is a nonprofit organization and we depend on supporters like you so we can continue working to ensure that government–at all levels–is open, engaging and accountable. So, once again, from the entire Sunlight staff: <strong>thank you!</strong></p>
+                                                    <p>Thank you for your generous recurring contribution to the Sunlight Foundation! Your confirmation number is <strong>[[PNREF]][[RPREF]]</strong>.</p>
+                                                    <p>To summarize, here are the details of your recurring contribution:<br />
+                                                    &#160; &#160; Amount: <strong>$[[amount]]</strong><br />
+                                                    &#160; &#160; Frequency: <strong>[[PAYPERIOD]]</strong>&#160;<span><small>(e.g. MONT=monthly; QTER=quarterly; SMYR=semiannually)</small><br />
+                                                    </span> &#160; &#160; Occurrences: <strong>[[TERM]]</strong><span align="left"> <small>(# of times your card will be charged $[[amount]], including today)</small></span></p>
+                                                    <br />
+                                                    <p>Your generous ongoing support helps us pursue a more open, transparent and accountable government and political system. We very much appreciate your contribution!</p>
+                                                    <p>So, on behalf of the entire Sunlight team — <strong>Thank you again!</strong></p>
+                                                    <p>Best, <br />
+                                                    <br />
+                                                    <strong>Lindsey Jacks</strong><br />
+                                                    Development Assistant<br />
+                                                    <a href="http://sunlightfoundation.com/contact/">ljacks@sunlightfoundation.com</a></p>
+                                                    <p>P.S. The Sunlight Foundation (EIN# 20-3903427) is a 501(c)(3) nonprofit, so your contribution is tax deductible for federal income tax purposes.</p>
 
                                                 </td>
                                                 <td class="expander"></td>
@@ -1003,37 +1016,47 @@
                 </table>
 
             <!-- Footer starts -->
-            <table class="row footer">
-                <tr>
-                    <td align="center" class="center">
-                        <table class="container">
-                            <tr>
-                                <td class="wrapper">
-                                    <table class="twelve columns">
-                                        <tr>
-                                            <td>
-
-                                                <h5 style="text-align:center;"><a href="http://sunlightfoundation.com">Sunlight Foundation</a></h5>
-
-                                                <p class="footer-text" style="text-align:center;">
-                                                    1818 N Street, NW | Suite 300 | Washington, DC  20036<br>
-                                                    <a href="http://sunlightfoundation.com/about/">MISSION</a> | <a href="http://sunlightfoundation.com/contact/">CONTACT US</a> | <a href="http://sunlightfoundation.com/legal/privacy/">PRIVACY POLICY</a> <br>
-                                                    The Sunlight Foundation does not rent or sell email lists.<br>
-                                                    <a href="http://sunlightfoundation.com/engage/preferences/[[subscription_key]]?e=[[Email]]&eb=[[email_blast_KEY]]">Unsubscribe or manage your email preferences</a>
-                                                    </p>
-                                                <br>
-
-                                            </td>
-
-                                            <td class="expander"></td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-            </table> <!-- End of Footer -->
+                <!-- Footer starts -->
+                <table class="row footer">
+                    <tr>
+                        <td align="center" class="center">
+                            <center>
+                                <table class="container">
+                                    <tr>
+                                        <td class="wrapper last">
+                                            <table class="twelve columns">
+                                                <tr>
+                                                    <td class="footer--section">
+                                                        <h5>Mission Statement</h5>
+                                                        <p class="footer-text">The Sunlight Foundation is a nonpartisan nonprofit that advocates for open government globally and uses technology to make government more accountable to all.</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="footer--section">
+                                                        <h5>We value your input and suggestions!</h5>
+                                                        <p class="footer-text">
+                                                            Let us hear from you at <a href="http://sunlightfoundation.com/contact/"> sunlightfoundation.com/contact</a> or call us at 202-742-1520.
+                                                            <br>
+                                                            1818 N Street NW | Suite 300 | Washington, DC 20036
+                                                        </p>
+                                                        <p class="footer-text">
+                                                            The Sunlight Foundation does not rent or sell email lists. Read about our <a href="http://sunlightfoundation.com/legal/privacy">Privacy Policy.</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="footer--section-last">
+                                                        <p class="footer-text"><a href="http://sunlightfoundation.com/engage/preferences/[[subscription_key]]?e=[[Email]]&eb=[[email_blast_KEY]]">Unsubscribe or manage your email preferences</a></p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </center>
+                        </td>
+                    </tr>
+                </table> <!-- End of Footer -->
             </center>
             </td>
         </tr>
