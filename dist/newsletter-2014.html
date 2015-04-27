@@ -1,0 +1,771 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width"/>
+    
+
+<style type="text/css">
+body {
+width: 100% !important; min-width: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; margin: 0; padding: 0;
+}
+.ExternalClass {
+width: 100%;
+}
+.ExternalClass {
+line-height: 100%;
+}
+#backgroundTable {
+margin: 0; padding: 0; width: 100% !important; line-height: 100% !important;
+}
+img {
+outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; width: auto; max-width: 100%; float: left; clear: both; display: block;
+}
+body {
+color: #222222; font-family: "Helvetica", "Arial", sans-serif; font-weight: normal; padding: 0; margin: 0; text-align: left; line-height: 1.3;
+}
+body {
+font-size: 14px; line-height: 19px;
+}
+a:hover {
+color: #2795b6 !important;
+}
+a:active {
+color: #2795b6 !important;
+}
+a:visited {
+color: #2ba6cb !important;
+}
+h1 a:active {
+color: #2ba6cb !important;
+}
+h2 a:active {
+color: #2ba6cb !important;
+}
+h3 a:active {
+color: #2ba6cb !important;
+}
+h4 a:active {
+color: #2ba6cb !important;
+}
+h5 a:active {
+color: #2ba6cb !important;
+}
+h6 a:active {
+color: #2ba6cb !important;
+}
+h1 a:visited {
+color: #2ba6cb !important;
+}
+h2 a:visited {
+color: #2ba6cb !important;
+}
+h3 a:visited {
+color: #2ba6cb !important;
+}
+h4 a:visited {
+color: #2ba6cb !important;
+}
+h5 a:visited {
+color: #2ba6cb !important;
+}
+h6 a:visited {
+color: #2ba6cb !important;
+}
+table.button:hover td {
+background: #2795b6 !important;
+}
+table.button:visited td {
+background: #2795b6 !important;
+}
+table.button:active td {
+background: #2795b6 !important;
+}
+table.button:hover td a {
+color: #fff !important;
+}
+table.button:visited td a {
+color: #fff !important;
+}
+table.button:active td a {
+color: #fff !important;
+}
+table.button:hover td {
+background: #2795b6 !important;
+}
+table.tiny-button:hover td {
+background: #2795b6 !important;
+}
+table.small-button:hover td {
+background: #2795b6 !important;
+}
+table.medium-button:hover td {
+background: #2795b6 !important;
+}
+table.large-button:hover td {
+background: #2795b6 !important;
+}
+table.button:hover td a {
+color: #ffffff !important;
+}
+table.button:active td a {
+color: #ffffff !important;
+}
+table.button td a:visited {
+color: #ffffff !important;
+}
+table.tiny-button:hover td a {
+color: #ffffff !important;
+}
+table.tiny-button:active td a {
+color: #ffffff !important;
+}
+table.tiny-button td a:visited {
+color: #ffffff !important;
+}
+table.small-button:hover td a {
+color: #ffffff !important;
+}
+table.small-button:active td a {
+color: #ffffff !important;
+}
+table.small-button td a:visited {
+color: #ffffff !important;
+}
+table.medium-button:hover td a {
+color: #ffffff !important;
+}
+table.medium-button:active td a {
+color: #ffffff !important;
+}
+table.medium-button td a:visited {
+color: #ffffff !important;
+}
+table.large-button:hover td a {
+color: #ffffff !important;
+}
+table.large-button:active td a {
+color: #ffffff !important;
+}
+table.large-button td a:visited {
+color: #ffffff !important;
+}
+table.secondary:hover td {
+background: #d0d0d0 !important; color: #555;
+}
+table.secondary:hover td a {
+color: #555 !important;
+}
+table.secondary td a:visited {
+color: #555 !important;
+}
+table.secondary:active td a {
+color: #555 !important;
+}
+table.success:hover td {
+background: #457a1a !important;
+}
+table.alert:hover td {
+background: #970b0e !important;
+}
+body.outlook p {
+display: inline !important;
+}
+body {
+color: #333333; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+}
+body {
+font-size: 14px; line-height: 20px;
+}
+a:hover {
+color: #42A5B3 !important;
+}
+a:active {
+color: #42A5B3 !important;
+}
+a:visited {
+color: #42A5B3 !important;
+}
+td.section-title a:hover {
+color: #bd8f22 !important; text-decoration: none;
+}
+@media only screen and (max-width: 600px) {
+  table[class="body"] img {
+    width: auto !important; height: auto !important;
+  }
+  table[class="body"] center {
+    min-width: 0 !important;
+  }
+  table[class="body"] .container {
+    width: 95% !important;
+  }
+  table[class="body"] .row {
+    width: 100% !important; display: block !important;
+  }
+  table[class="body"] .wrapper {
+    display: block !important; padding-right: 0 !important;
+  }
+  table[class="body"] .columns {
+    table-layout: fixed !important; float: none !important; width: 100% !important; padding-right: 0px !important; padding-left: 0px !important; display: block !important;
+  }
+  table[class="body"] .column {
+    table-layout: fixed !important; float: none !important; width: 100% !important; padding-right: 0px !important; padding-left: 0px !important; display: block !important;
+  }
+  table[class="body"] .wrapper.first .columns {
+    display: table !important;
+  }
+  table[class="body"] .wrapper.first .column {
+    display: table !important;
+  }
+  table[class="body"] table.columns td {
+    width: 100% !important;
+  }
+  table[class="body"] table.column td {
+    width: 100% !important;
+  }
+  table[class="body"] .columns td.one {
+    width: 8.333333% !important;
+  }
+  table[class="body"] .column td.one {
+    width: 8.333333% !important;
+  }
+  table[class="body"] .columns td.two {
+    width: 16.666666% !important;
+  }
+  table[class="body"] .column td.two {
+    width: 16.666666% !important;
+  }
+  table[class="body"] .columns td.three {
+    width: 25% !important;
+  }
+  table[class="body"] .column td.three {
+    width: 25% !important;
+  }
+  table[class="body"] .columns td.four {
+    width: 33.333333% !important;
+  }
+  table[class="body"] .column td.four {
+    width: 33.333333% !important;
+  }
+  table[class="body"] .columns td.five {
+    width: 41.666666% !important;
+  }
+  table[class="body"] .column td.five {
+    width: 41.666666% !important;
+  }
+  table[class="body"] .columns td.six {
+    width: 50% !important;
+  }
+  table[class="body"] .column td.six {
+    width: 50% !important;
+  }
+  table[class="body"] .columns td.seven {
+    width: 58.333333% !important;
+  }
+  table[class="body"] .column td.seven {
+    width: 58.333333% !important;
+  }
+  table[class="body"] .columns td.eight {
+    width: 66.666666% !important;
+  }
+  table[class="body"] .column td.eight {
+    width: 66.666666% !important;
+  }
+  table[class="body"] .columns td.nine {
+    width: 75% !important;
+  }
+  table[class="body"] .column td.nine {
+    width: 75% !important;
+  }
+  table[class="body"] .columns td.ten {
+    width: 83.333333% !important;
+  }
+  table[class="body"] .column td.ten {
+    width: 83.333333% !important;
+  }
+  table[class="body"] .columns td.eleven {
+    width: 91.666666% !important;
+  }
+  table[class="body"] .column td.eleven {
+    width: 91.666666% !important;
+  }
+  table[class="body"] .columns td.twelve {
+    width: 100% !important;
+  }
+  table[class="body"] .column td.twelve {
+    width: 100% !important;
+  }
+  table[class="body"] td.offset-by-one {
+    padding-left: 0 !important;
+  }
+  table[class="body"] td.offset-by-two {
+    padding-left: 0 !important;
+  }
+  table[class="body"] td.offset-by-three {
+    padding-left: 0 !important;
+  }
+  table[class="body"] td.offset-by-four {
+    padding-left: 0 !important;
+  }
+  table[class="body"] td.offset-by-five {
+    padding-left: 0 !important;
+  }
+  table[class="body"] td.offset-by-six {
+    padding-left: 0 !important;
+  }
+  table[class="body"] td.offset-by-seven {
+    padding-left: 0 !important;
+  }
+  table[class="body"] td.offset-by-eight {
+    padding-left: 0 !important;
+  }
+  table[class="body"] td.offset-by-nine {
+    padding-left: 0 !important;
+  }
+  table[class="body"] td.offset-by-ten {
+    padding-left: 0 !important;
+  }
+  table[class="body"] td.offset-by-eleven {
+    padding-left: 0 !important;
+  }
+  table[class="body"] table.columns td.expander {
+    width: 1px !important;
+  }
+  table[class="body"] .right-text-pad {
+    padding-left: 10px !important;
+  }
+  table[class="body"] .text-pad-right {
+    padding-left: 10px !important;
+  }
+  table[class="body"] .left-text-pad {
+    padding-right: 10px !important;
+  }
+  table[class="body"] .text-pad-left {
+    padding-right: 10px !important;
+  }
+  table[class="body"] .hide-for-small {
+    display: none !important;
+  }
+  table[class="body"] .show-for-desktop {
+    display: none !important;
+  }
+  table[class="body"] .show-for-small {
+    display: inherit !important;
+  }
+  table[class="body"] .hide-for-desktop {
+    display: inherit !important;
+  }
+  table[class="body"] img.headershare--social {
+    width: 20px !important; height: 14px !important; vertical-align: middle !important;
+  }
+  .header-logo a.logo img {
+    width: 250px !important;
+  }
+  td.newsletter-title img {
+    width: 200px !important;
+  }
+  table.row.highlights-nav td {
+    padding: 0 !important;
+  }
+  table.row td.highlights-title {
+    padding: 20px 0 !important;
+  }
+  td.section-title {
+    border-bottom: 1px dashed #C1BAA9;
+  }
+  td.section-title-rule {
+    width: 0px !important; display: none;
+  }
+  td.section-title-rule-arrow {
+    display: none;
+  }
+  table[class="body"] table.columns td.section-title-thankyou {
+    width: 30% !important;
+  }
+  table[class="body"] table.columns td.section-title-rule-thankyou {
+    width: 30% !important;
+  }
+  table.section {
+    width: 90% !important; margin-left: 20px !important; margin-right: 20px !important;
+  }
+  table.section-article {
+    width: 90% !important; margin-left: 20px !important; margin-right: 20px !important;
+  }
+  table.section-article {
+    margin-top: 10px !important;
+  }
+  img.featured-img {
+    padding-top: 5px !important;
+  }
+  img.article-img {
+    padding-right: 0 !important; padding-top: 5px !important; padding-bottom: 10px !important;
+  }
+}
+@media screen {
+  @font-face {
+    font-family: 'Source Sans Pro'; font-style: normal; font-weight: 400; src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url('http://fonts.gstatic.com/s/sourcesanspro/v9/ODelI1aHBYDBqgeIAH2zlNzbP97U9sKh0jjxbPbfOKg.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'Source Sans Pro'; font-style: normal; font-weight: 700; src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url('http://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGLsbIrGiHa6JIepkyt5c0A0.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'Source Sans Pro'; font-style: italic; font-weight: 400; src: local('Source Sans Pro Italic'), local('SourceSansPro-It'), url('http://fonts.gstatic.com/s/sourcesanspro/v9/M2Jd71oPJhLKp0zdtTvoM0DauxaEVho0aInXGvhmB4k.ttf') format('truetype');
+  }
+}
+</style>
+</head>
+
+<body style="width: 100% !important; min-width: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; color: #333333; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; text-align: left; line-height: 20px; font-size: 14px; margin: 0; padding: 0;">
+<!-- Email Preview Text -->
+    <span class="email-preview-text" style="visibility: hidden; display: none; height: 0px; font-size: 1px; color: #ffffff; margin: 0; padding: 0;">Update from the Sunlight Foundation testing</span>
+
+    <table class="body" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; height: 100%; width: 100%; color: #333333; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 20px; font-size: 14px; margin: 0; padding: 0;">
+        <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+            <td class="center" align="center" valign="top" style="border-collapse: collapse !important; vertical-align: top; text-align: center; color: #333333; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 20px; font-size: 14px; margin: 0; padding: 0;">
+                <center style="width: 100%; min-width: 580px;">
+                    <table class="row header" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 100%; position: relative; background: #eeeeee; padding: 0px;">
+                        <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+                            <td align="center" class="center" style="border-collapse: collapse !important; vertical-align: top; text-align: center; color: #333333; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 20px; font-size: 14px; margin: 0; padding: 0;" valign="top">
+                                <center style="width: 100%; min-width: 580px;">
+                                    <table class="container" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: inherit; width: 580px; margin: 0 auto; padding: 0;">
+                                        <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+                                            <td class="wrapper last" style="border-collapse: collapse !important; vertical-align: top; text-align: left; position: relative; color: #333333; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 20px; font-size: 14px; margin: 0; padding: 10px 0px 0px;" align="left" valign="top">
+                                                <table class="twelve columns" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 580px; margin: 0 auto; padding: 0;">
+                                                    <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+                                                        <td class="eight sub-columns" style="border-collapse: collapse !important; vertical-align: top; text-align: left; min-width: 0px; width: 66.666666%; color: #333333; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 20px; font-size: 14px; margin: 0; padding: 0px 10px 10px 0px;" align="left" valign="top">
+                                                            <span class="headershare--label" style="color: #999999; font-size: 12px;">
+                                                                <a href="*|ARCHIVE|*" style="color: #999999; text-decoration: none;">View in browser</a>
+                                                                &nbsp;&nbsp;|&nbsp;&nbsp;
+                                                                <a href="http://sunlightfoundation.com/join/" style="color: #999999; text-decoration: none;">Join us</a>
+                                                            </span>
+                                                        </td>
+
+                                                        <td class="four sub-columns last" style="text-align: right; vertical-align: middle; float: none; border-collapse: collapse !important; min-width: 0px; width: 33.333333%; color: #333333; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 20px; font-size: 14px; margin: 0; padding: 0px 0px 10px;" align="right" valign="middle">
+                                                            <span class="headershare--label" style="color: #999999; font-size: 12px;">
+                                                                <a href="https://twitter.com/SunFoundation" style="color: #999999; text-decoration: none;"><img class="headershare--social" alt="Find us on Twitter" width="20" height="14" src="http://sunlight-cdn.s3.amazonaws.com/emails/partials/twitter-icon.png" style="display: inline; float: none; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; width: auto; max-width: 100%; clear: both; vertical-align: middle !important; border: none;" align="none" /></a>
+                                                                <a href="https://www.facebook.com/sunlightfoundation" style="color: #999999; text-decoration: none;"><img class="headershare--social" alt="Find us on Facebook" width="20" height="14" src="http://sunlight-cdn.s3.amazonaws.com/emails/partials/facebook-icon.png" style="display: inline; float: none; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; width: auto; max-width: 100%; clear: both; vertical-align: middle !important; border: none;" align="none" /></a>
+                                                            </span>
+                                                        </td>
+                                                        <td class="expander" style="border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #333333; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 20px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top"></td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </center>
+                            </td>
+                        </tr>
+                    </table>
+                <table class="row header-logo" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 100%; position: relative; background: #ffffff; padding: 0px;">
+                    <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+                        <td align="center" class="center" style="border-collapse: collapse !important; vertical-align: top; text-align: center; color: #333333; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 20px; font-size: 14px; margin: 0; padding: 0;" valign="top">
+                            <table class="container" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: inherit; width: 580px; margin: 0 auto; padding: 0;">
+                                <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+                                    <td style="border-collapse: collapse !important; vertical-align: top; text-align: left; color: #333333; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 20px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top">
+                                        <table class="twelve columns" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 580px; margin: 0 auto; padding: 0;">
+                                            <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+<!-- Issue Number -->
+                                                <td class="issue-number" style="border-collapse: collapse !important; vertical-align: top; text-align: right; color: #978F80; font-family: georgia, times new roman, times, serif; font-weight: normal; line-height: 20px; font-size: 11px; margin: 0; padding: 0px 0px 10px;" align="right" valign="top">March 2014 | Issue 344</td>
+                                            </tr>
+                                            <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+                                                <td align="center" class="center" style="border-collapse: collapse !important; vertical-align: top; text-align: center; color: #333333; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 20px; font-size: 14px; margin: 0; padding: 0px 0px 10px;" valign="top">
+                                                    <a class="logo" href="http://sunlightfoundation.com/" style="color: #005D6E; text-decoration: underline; display: inline-block;">
+                                                        <img class="center" alt="Sunlight Foundation" width="200" height="37" src="http://assets.sunlightfoundation.com.s3.amazonaws.com/email/Email-Images/sunlight-foundation_long_500.png" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; width: auto; max-width: 100%; float: none; clear: both; display: block; margin: 0 auto; border: none;" align="none" />
+                                                    </a>
+                                                </td>
+                                                <td class="expander" style="border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #333333; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 20px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top"></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+                        <td align="center" class="center newsletter-title" style="border-collapse: collapse !important; vertical-align: top; text-align: center; color: #333333; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 0; font-size: 14px; margin: 0; padding: 0;" valign="top">
+                            <img alt="Newsletter" width="170" height="40" src="http://assets.sunlightfoundation.com/email/Email-Images/newsletter.png" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; width: 170px; max-width: 100%; float: none; clear: both; display: inline;" align="none" />
+                        </td>
+                    </tr>
+                </table>
+
+                <table class="row highlights-nav" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 100%; position: relative; border-top-color: #e2b937; border-top-style: solid; border-top-width: 2px; border-bottom-color: #e2b937; border-bottom-style: solid; border-bottom-width: 2px; background: #fcf6d9; padding: 0px;">
+                    <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+                        <td align="center" class="center" style="border-collapse: collapse !important; vertical-align: top; text-align: center; color: #333333; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 20px; font-size: 14px; margin: 0; padding: 0;" valign="top">
+
+                            <table class="container" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: inherit; width: 580px; margin: 0 auto; padding: 0;">
+                                <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+                                    <td style="border-collapse: collapse !important; vertical-align: top; text-align: left; color: #333333; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 20px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top">
+
+                                    <table class="row" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 100%; position: relative; display: block; padding: 0px;">
+                                        <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+                                            <td class="wrapper last" style="border-collapse: collapse !important; vertical-align: top; text-align: left; position: relative; color: #333333; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 20px; font-size: 14px; margin: 0; padding: 10px 0px 0px;" align="left" valign="top">
+
+                                                <table class="twelve columns" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 580px; margin: 0 auto; padding: 0;">
+                                                    <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+                                                        <td class="highlights-title" style="border-collapse: collapse !important; vertical-align: top; text-align: left; color: #978F80; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 20px; font-size: 15px; white-space: nowrap; text-transform: uppercase; margin: 0; padding: 10px 10px 10px 0px;" align="left" valign="top">What You'll Discover</td>
+                                                        <td class="section-title-rule-highlights" style="border-collapse: collapse !important; vertical-align: top; text-align: left; color: #333333; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 20px; font-size: 14px; width: 100%; margin: 0; padding: 13px 0px 10px;" align="left" valign="top"><hr style="color: #C1BAA9; height: 1px; border-top-width: 1px; border-top-color: #C1BAA9; background: transparent; border-style: dashed none none;" /></td>
+                                                        <td class="section-title-rule-arrow" style="border-collapse: collapse !important; vertical-align: top; text-align: left; color: #C1BAA9; font-family: georgia, times new roman, times, serif; font-weight: normal; line-height: 20px; font-size: 10px; white-space: nowrap; margin: 0; padding: 10px 10px 10px 0px;" align="left" valign="top">></td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+
+                                    <table class="row" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 100%; position: relative; display: block; padding: 0px;">
+                                        <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+                                            <td class="wrapper" style="border-collapse: collapse !important; vertical-align: top; text-align: left; position: relative; color: #333333; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 20px; font-size: 14px; margin: 0; padding: 10px 20px 0px 0px;" align="left" valign="top">
+
+                                                <table class="six columns" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 280px; margin: 0 auto; padding: 0;">
+                                                    <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+                                                        <td style="border-collapse: collapse !important; vertical-align: top; text-align: left; color: #333333; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 20px; font-size: 14px; margin: 0; padding: 0px 0px 10px;" align="left" valign="top">
+<!-- What You'll Discover Bullets -->
+                                                            <p style="color: #333333; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; text-align: left; line-height: 20px; font-size: 14px; margin: 0 0 20px; padding: 0;" align="left">
+                                                                <img class="bullet" width="12" height="12" src="http://assets.sunlightfoundation.com/email/Email-Images/arrow.png" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; width: auto; max-width: 100%; float: left; clear: both; display: block; height: 12px; padding: 4px 4px 0 0;" align="left" /> <a href="#section-1" style="color: #444; text-decoration: underline;">Sunshine Week 2014</a>
+                                                            </p>
+                                                            <p style="color: #333333; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; text-align: left; line-height: 20px; font-size: 14px; margin: 0 0 20px; padding: 0;" align="left">
+                                                                <img class="bullet" width="12" height="12" src="http://assets.sunlightfoundation.com/email/Email-Images/arrow.png" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; width: auto; max-width: 100%; float: left; clear: both; display: block; height: 12px; padding: 4px 4px 0 0;" align="left" /> <a href="#section-2" style="color: #444; text-decoration: underline;">Register for TransparencyCamp 2014</a>
+                                                            </p>
+                                                            <p style="color: #333333; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; text-align: left; line-height: 20px; font-size: 14px; margin: 0 0 20px; padding: 0;" align="left">
+                                                                <img class="bullet" width="12" height="12" src="http://assets.sunlightfoundation.com/email/Email-Images/arrow.png" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; width: auto; max-width: 100%; float: left; clear: both; display: block; height: 12px; padding: 4px 4px 0 0;" align="left" /> <a href="#section-3" style="color: #444; text-decoration: underline;">Sunlight’s revamped Local Policy page</a>
+                                                            </p>
+
+                                                        </td>
+                                                        <td class="expander" style="border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #333333; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 20px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top"></td>
+                                                    </tr>
+                                                </table>
+
+                                            </td>
+                                            <td class="wrapper last" style="border-collapse: collapse !important; vertical-align: top; text-align: left; position: relative; color: #333333; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 20px; font-size: 14px; margin: 0; padding: 10px 0px 0px;" align="left" valign="top">
+
+                                                <table class="six columns" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 280px; margin: 0 auto; padding: 0;">
+                                                    <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+                                                        <td style="border-collapse: collapse !important; vertical-align: top; text-align: left; color: #333333; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 20px; font-size: 14px; margin: 0; padding: 0px 0px 10px;" align="left" valign="top">
+<!-- What You'll Discover Bullets -->
+                                                            <p style="color: #333333; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; text-align: left; line-height: 20px; font-size: 14px; margin: 0 0 20px; padding: 0;" align="left">
+                                                                <img class="bullet" width="12" height="12" src="http://assets.sunlightfoundation.com/email/Email-Images/arrow.png" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; width: auto; max-width: 100%; float: left; clear: both; display: block; height: 12px; padding: 4px 4px 0 0;" align="left" /> <a href="#section-4" style="color: #444; text-decoration: underline;">How 60,000 bills tried to become law</a>
+                                                            </p>
+                                                            <p style="color: #333333; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; text-align: left; line-height: 20px; font-size: 14px; margin: 0 0 20px; padding: 0;" align="left">
+                                                                <img class="bullet" width="12" height="12" src="http://assets.sunlightfoundation.com/email/Email-Images/arrow.png" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; width: auto; max-width: 100%; float: left; clear: both; display: block; height: 12px; padding: 4px 4px 0 0;" align="left" /> <a href="#section-5" style="color: #444; text-decoration: underline;">A new tool for your opengov project</a>
+                                                            </p>
+
+                                                        </td>
+                                                        <td class="expander" style="border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #333333; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 20px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top"></td>
+                                                    </tr>
+                                                </table>
+
+                                            </td>
+                                        </tr>
+                                    </table>
+
+                                    </td>
+                                </tr>
+                            </table>
+
+                        </td>
+                    </tr>
+                </table>
+
+            <table class="container" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: inherit; width: 580px; margin: 0 auto; padding: 0;">
+            <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+                <td style="border-collapse: collapse !important; vertical-align: top; text-align: left; color: #333333; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 20px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top">
+
+                    <table class="row" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 100%; position: relative; display: block; padding: 0px;">
+                        <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+                            <td class="wrapper" style="border-collapse: collapse !important; vertical-align: top; text-align: left; position: relative; color: #333333; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 20px; font-size: 14px; margin: 0; padding: 10px 20px 0px 0px;" align="left" valign="top">
+
+                                <table class="twelve columns" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 580px; margin: 0 auto; padding: 0;">
+                                    <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+                                        <td style="border-collapse: collapse !important; vertical-align: top; text-align: left; color: #333333; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 20px; font-size: 14px; margin: 0; padding: 0px 0px 10px;" align="left" valign="top">
+<!-- Section Content Starts -->
+                                            <table class="section" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; margin-top: 20px; padding: 0;">
+                                                <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+                                                    <td class="section-title" style="border-collapse: collapse !important; vertical-align: top; text-align: left; color: #bd8f22; font-family: georgia, times new roman, times, serif; font-weight: normal; line-height: 20px; font-size: 19px; white-space: nowrap; font-style: italic; margin: 0; padding: 0px 10px 10px 0px;" align="left" valign="top"><a name="section-1" style="color: #bd8f22 !important; text-decoration: none;">Sunshine Week 2014</a></td>
+                                                    <td class="section-title-rule" style="border-collapse: collapse !important; vertical-align: top; text-align: left; color: #333333; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 20px; font-size: 14px; width: 100%; margin: 0; padding: 5px 0px 10px;" align="left" valign="top"><hr style="color: #C1BAA9; height: 1px; border-top-width: 1px; border-top-color: #C1BAA9; background: transparent; border-style: dashed none none;" /></td>
+                                                </tr>
+                                            </table>
+                                            <table class="section-article" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; padding: 0;">
+                                                <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+                                                    <td style="border-collapse: collapse !important; vertical-align: top; text-align: left; color: #333333; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 20px; font-size: 14px; margin: 0; padding: 0px 0px 10px;" align="left" valign="top">
+                                                        <p style="color: #333333; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; text-align: left; line-height: 20px; font-size: 14px; margin: 0 0 20px; padding: 0;" align="left"><strong>Although we haven’t seen much spring sun in Washington recently, we’re hoping that the weather will warm up in time for the aptly named <a href="#" style="color: #005D6E; text-decoration: underline;">Sunshine Week</a>.</strong> Sunshine Week is a nationwide consortium of events dedicated to the discussion of open government and the importance of access to public information – and it’s coming to a city near you! This year Sunshine Week will be held March 16-22 and will include <a href="#" style="color: #005D6E; text-decoration: underline;">panels and discussion across the country</a>, so you can participate in the open government conversation no matter where you are. And for those of you in the D.C. area, Sunlight is hosting a few Sunshine Week events too. We hope to see you there!</p>
+                                                        <p style="color: #333333; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; text-align: left; line-height: 20px; font-size: 14px; margin: 0 0 20px; padding: 0;" align="left"><a href="#" style="color: #005D6E; text-decoration: underline;"><strong>Unlocking Government Data</strong></a>: Sunlight Foundation, in partnership with other open-government groups will host a panel discussion on Tuesday, March 18 at 6:30 pm at the National Press Club.</p>
+                                                        <p style="color: #333333; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; text-align: left; line-height: 20px; font-size: 14px; margin: 0 0 20px; padding: 0;" align="left"><strong>FOIA Reform</strong>: The <a href="#" style="color: #005D6E; text-decoration: underline;">Advisory Committee on Transparency</a> will host a moderated discussion on Wednesday, March 19 at 2 pm at the Rayburn House Office Building, Room 2203.</p>
+                                                        <p style="color: #333333; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; text-align: left; line-height: 20px; font-size: 14px; margin: 0 0 20px; padding: 0;" align="left"><strong>The Unknown Known</strong>: Sunlight Foundation, in partnership with Participant Media, will host a free pre-release screening of "<a href="#" style="color: #005D6E; text-decoration: underline;">The Unknown Known</a>" on Thursday, March 20 at 6:30 pm at Landmark’s E Street Cinema. <a href="#" style="color: #005D6E; text-decoration: underline;">RSVP here</a>.</p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+
+                                            <table class="section" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; margin-top: 20px; padding: 0;">
+                                                <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+                                                    <td class="section-title" style="border-collapse: collapse !important; vertical-align: top; text-align: left; color: #bd8f22; font-family: georgia, times new roman, times, serif; font-weight: normal; line-height: 20px; font-size: 19px; white-space: nowrap; font-style: italic; margin: 0; padding: 0px 10px 10px 0px;" align="left" valign="top"><a name="section-2" style="color: #bd8f22 !important; text-decoration: none;">TransparencyCamp 2014</a></td>
+                                                    <td class="section-title-rule" style="border-collapse: collapse !important; vertical-align: top; text-align: left; color: #333333; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 20px; font-size: 14px; width: 100%; margin: 0; padding: 5px 0px 10px;" align="left" valign="top"><hr style="color: #C1BAA9; height: 1px; border-top-width: 1px; border-top-color: #C1BAA9; background: transparent; border-style: dashed none none;" /></td>
+                                                </tr>
+                                            </table>
+                                            <table class="section-article" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; padding: 0;">
+                                                <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+                                                    <td style="border-collapse: collapse !important; vertical-align: top; text-align: left; color: #333333; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 20px; font-size: 14px; margin: 0; padding: 0px 0px 10px;" align="left" valign="top">
+                                                        <img class="center featured-img" width="580px" height="200px" src="http://placehold.it/580x200" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; width: auto; max-width: 100%; float: none; clear: both; display: block; padding-top: 10px; padding-bottom: 10px; margin: 0 auto;" align="none" />
+                                                        <p style="color: #333333; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; text-align: left; line-height: 20px; font-size: 14px; margin: 0 0 20px; padding: 0;" align="left"><strong>With TransparencyCamp just two months away, the TCamp team is hard at tcampwork to create another awesome event this spring.</strong> <a href="#" style="color: #005D6E; text-decoration: underline;">TCamp</a>, Sunlight’s annual “unconference,” will be held on May 30-31 at the George Mason University Arlington campus. Since TCamp is an “unconference” (a discussion-based conference where the participants set the agenda), its success relies on the participation of attendees to create an engaging environment. That means we need your help! Register for TCamp14 and you can help us make this our best TCamp yet. <a href="#" style="color: #005D6E; text-decoration: underline;">Share the link</a> and your ideas to help shape the conversation around TCamp14. You can even sign up to be a TransparencyCamp Ambassador and help grow the opengov community. We’ve sold out of tickets the last two years, so <a href="#" style="color: #005D6E; text-decoration: underline;">register for TCamp14 today</a> – before it’s too late. We can’t wait to see what you will bring to this year’s TCamp!</p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+
+                                            <table class="section" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; margin-top: 20px; padding: 0;">
+                                                <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+                                                    <td class="section-title" style="border-collapse: collapse !important; vertical-align: top; text-align: left; color: #bd8f22; font-family: georgia, times new roman, times, serif; font-weight: normal; line-height: 20px; font-size: 19px; white-space: nowrap; font-style: italic; margin: 0; padding: 0px 10px 10px 0px;" align="left" valign="top"><a name="section-3" style="color: #bd8f22 !important; text-decoration: none;">Sunlight Local</a></td>
+                                                    <td class="section-title-rule" style="border-collapse: collapse !important; vertical-align: top; text-align: left; color: #333333; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 20px; font-size: 14px; width: 100%; margin: 0; padding: 5px 0px 10px;" align="left" valign="top"><hr style="color: #C1BAA9; height: 1px; border-top-width: 1px; border-top-color: #C1BAA9; background: transparent; border-style: dashed none none;" /></td>
+                                                </tr>
+                                            </table>
+                                            <table class="section-article" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; padding: 0;">
+                                                <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+                                                    <td style="border-collapse: collapse !important; vertical-align: top; text-align: left; color: #333333; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 20px; font-size: 14px; margin: 0; padding: 0px 0px 10px;" align="left" valign="top">
+                                                        <p style="color: #333333; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; text-align: left; line-height: 20px; font-size: 14px; margin: 0 0 20px; padding: 0;" align="left">
+                                                            <img class="article-img" width="300px" height="150px" src="http://placehold.it/300x150" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; width: auto; max-width: 100%; float: left; clear: both; display: block; padding-right: 15px;" align="left" />
+                                                            <strong>Interested in finding out what our Sunlight Local team is up to?</strong> Come opendata mapcheck out our <a href="#" style="color: #005D6E; text-decoration: underline;">revamped Sunlight Local Policy homepage</a>. Our Local team already brings you analyses and resources for state, county and municipal open data and transparency policies – and now we’re doing it with a brand new look. Our Local team’s new homepage still includes our mission to support local government openness, but now it is paired alongside our <a href="#" style="color: #005D6E; text-decoration: underline;">Local Open Data Policy Map</a> and links to our <a href="#" style="color: #005D6E; text-decoration: underline;">Open Data Policy Guidelines</a> and analyses. You can also use our Open Data 101 section to find our in-depth series as well as any other open government resources you might need. We’ve re-designed the page to provide you with a “one-stop shop” for local open data, so come visit soon and let us be of service!
+                                                            </p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+
+                                            <table class="section" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; margin-top: 20px; padding: 0;">
+                                                <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+                                                    <td class="section-title" style="border-collapse: collapse !important; vertical-align: top; text-align: left; color: #bd8f22; font-family: georgia, times new roman, times, serif; font-weight: normal; line-height: 20px; font-size: 19px; white-space: nowrap; font-style: italic; margin: 0; padding: 0px 10px 10px 0px;" align="left" valign="top"><a name="section-4" style="color: #bd8f22 !important; text-decoration: none;">How 60,000 bills tried to become law</a></td>
+                                                    <td class="section-title-rule" style="border-collapse: collapse !important; vertical-align: top; text-align: left; color: #333333; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 20px; font-size: 14px; width: 100%; margin: 0; padding: 5px 0px 10px;" align="left" valign="top"><hr style="color: #C1BAA9; height: 1px; border-top-width: 1px; border-top-color: #C1BAA9; background: transparent; border-style: dashed none none;" /></td>
+                                                </tr>
+                                            </table>
+                                            <table class="section-article" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; padding: 0;">
+                                                <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+                                                    <td style="border-collapse: collapse !important; vertical-align: top; text-align: left; color: #333333; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 20px; font-size: 14px; margin: 0; padding: 0px 0px 10px;" align="left" valign="top">
+                                                        <img class="center featured-img" width="580px" height="200px" src="http://placehold.it/580x200" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; width: auto; max-width: 100%; float: none; clear: both; display: block; padding-top: 10px; padding-bottom: 10px; margin: 0 auto;" align="none" />
+                                                        <p style="color: #333333; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; text-align: left; line-height: 20px; font-size: 14px; margin: 0 0 20px; padding: 0;" align="left"><strong>Recently, there has been increased interest in the <a href="#" style="color: #005D6E; text-decoration: underline;">large proportion of bills introduced in Congress</a> that never pass.</strong> While working on <a href="#" style="color: #005D6E; text-decoration: underline;">OpenCongress</a>, we uncovered more information on the <a href="#" style="color: #005D6E; text-decoration: underline;">grueling and inconsistent path</a> in which bills travel through Congress (most of which aren’t ultimately signed into law). We’ve compiled the paths of <a href="#" style="color: #005D6E; text-decoration: underline;">60,000 bills</a> introduced in the last five Congresses into one graph – and it’s not a pretty picture. Many bills bounce back and forth between the chambers and few take the familiar path through the House and Senate that we learned in civics class. This graph (and the subsequent graphs for each individual Congress) provides insight into the winding and complicated path – full of stops and starts – that most bills go through. But don’t just study this graph, <a href="#" style="color: #005D6E; text-decoration: underline;">start tracking bills you care about with OpenCongress</a> and follow the complicated path a bill takes yourself!</p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+
+                                            <table class="section" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; margin-top: 20px; padding: 0;">
+                                                <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+                                                    <td class="section-title" style="border-collapse: collapse !important; vertical-align: top; text-align: left; color: #bd8f22; font-family: georgia, times new roman, times, serif; font-weight: normal; line-height: 20px; font-size: 19px; white-space: nowrap; font-style: italic; margin: 0; padding: 0px 10px 10px 0px;" align="left" valign="top"><a name="section-5" style="color: #bd8f22 !important; text-decoration: none;">Congressional Record Parser</a></td>
+                                                    <td class="section-title-rule" style="border-collapse: collapse !important; vertical-align: top; text-align: left; color: #333333; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 20px; font-size: 14px; width: 100%; margin: 0; padding: 5px 0px 10px;" align="left" valign="top"><hr style="color: #C1BAA9; height: 1px; border-top-width: 1px; border-top-color: #C1BAA9; background: transparent; border-style: dashed none none;" /></td>
+                                                </tr>
+                                            </table>
+                                            <table class="section-article" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; padding: 0;">
+                                                <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+                                                    <td style="border-collapse: collapse !important; vertical-align: top; text-align: left; color: #333333; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 20px; font-size: 14px; margin: 0; padding: 0px 0px 10px;" align="left" valign="top">
+                                                        <p style="color: #333333; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; text-align: left; line-height: 20px; font-size: 14px; margin: 0 0 20px; padding: 0;" align="left"><strong>Sunlight is proud to introduce our <a href="#" style="color: #005D6E; text-decoration: underline;">new modular Congressional-Record project</a>.</strong> This tool allows you to parse the flat text of the Congressional Record from the Government Printing Office’s (GPO) <a href="#" style="color: #005D6E; text-decoration: underline;">HTML</a> files and produce structured, bulk data that you can use. The <a href="#" style="color: #005D6E; text-decoration: underline;">/unitedstates project</a> is a collaboration between open government and open source technologists to make government accountability tools more accessible to developers. So, we want feedback from you on how to make the tool as useful as possible for your project. Check out <a href="#" style="color: #005D6E; text-decoration: underline;">how to run the parser</a> and then tell us how we can make the tool better for your use. You can also <a href="#" style="color: #005D6E; text-decoration: underline;">contribute to the Congressional-Record parser</a> or other parts of the <a href="#" style="color: #005D6E; text-decoration: underline;">/unitedstates project</a> and help us make these tools as accessible as possible for the open government community!</p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+
+                                            <table class="section" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; margin-top: 20px; padding: 0;">
+                                                <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+                                                    <td class="section-title" style="border-collapse: collapse !important; vertical-align: top; text-align: left; color: #bd8f22; font-family: georgia, times new roman, times, serif; font-weight: normal; line-height: 20px; font-size: 19px; white-space: nowrap; font-style: italic; margin: 0; padding: 0px 10px 10px 0px;" align="left" valign="top"><a name="section-6" style="color: #bd8f22 !important; text-decoration: none;">Transparency in the News</a></td>
+                                                    <td class="section-title-rule" style="border-collapse: collapse !important; vertical-align: top; text-align: left; color: #333333; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 20px; font-size: 14px; width: 100%; margin: 0; padding: 5px 0px 10px;" align="left" valign="top"><hr style="color: #C1BAA9; height: 1px; border-top-width: 1px; border-top-color: #C1BAA9; background: transparent; border-style: dashed none none;" /></td>
+                                                </tr>
+                                            </table>
+                                            <table class="section-article" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; padding: 0;">
+                                                <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+                                                    <td style="border-collapse: collapse !important; vertical-align: top; text-align: left; color: #333333; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 20px; font-size: 14px; margin: 0; padding: 0px 0px 10px;" align="left" valign="top">
+                                                        <p style="color: #333333; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; text-align: left; line-height: 20px; font-size: 14px; margin: 0 0 20px; padding: 0;" align="left">
+                                                            <a href="#" style="color: #005D6E; text-decoration: underline;"><strong>Change the rules on secret money</strong></a>
+                                                            <br>
+                                                            The New York Time’s Editorial Board argues that the Internal Revenue Service should proceed with its crackdown on the abuse of the tax code by political groups, despite attacks by tax-exempt nonprofits (The New York Times, February 18, 2014).
+                                                        </p>
+                                                        <p style="color: #333333; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; text-align: left; line-height: 20px; font-size: 14px; margin: 0 0 20px; padding: 0;" align="left">
+                                                            <a href="#" style="color: #005D6E; text-decoration: underline;"><strong>Grey Eminences: How companies try to influence government</strong></a>
+                                                            <br>
+                                                            The Economist discusses how companies influence government, claiming that the interests of producers dominate lobbying (The Economist, February 22, 2014).
+                                                        </p>
+                                                        <p style="color: #333333; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; text-align: left; line-height: 20px; font-size: 14px; margin: 0 0 20px; padding: 0;" align="left">
+                                                            <a href="#" style="color: #005D6E; text-decoration: underline;"><strong>Where have all the lobbyists gone?</strong></a>
+                                                            <br>
+                                                            The Nation’s Lee Fang explains how the lobbying business – that looks as if it is shrinking on paper – is thriving through underground channels (The Nation, February 19, 2014).
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+
+                                            <table class="section" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; margin-top: 20px; padding: 0;">
+                                                <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+                                                    <td class="section-title-rule-thankyou" style="border-collapse: collapse !important; vertical-align: top; text-align: left; color: #333333; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 20px; font-size: 14px; width: 50%; margin: 0; padding: 5px 0px 10px;" align="left" valign="top"><hr style="color: #C1BAA9; height: 1px; border-top-width: 2px; border-top-color: #C1BAA9; background: transparent; border-style: dotted none none;" /></td>
+                                                    <td class="section-title-thankyou" style="border-collapse: collapse !important; vertical-align: top; text-align: left; color: #4D5B5C; font-family: georgia, times new roman, times, serif; font-weight: normal; line-height: 20px; font-size: 19px; white-space: nowrap; font-style: italic; margin: 0; padding: 0px 10px 10px;" align="left" valign="top">Thank You!</td>
+                                                    <td class="section-title-rule-thankyou" style="border-collapse: collapse !important; vertical-align: top; text-align: left; color: #333333; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 20px; font-size: 14px; width: 50%; margin: 0; padding: 5px 0px 10px;" align="left" valign="top"><hr style="color: #C1BAA9; height: 1px; border-top-width: 2px; border-top-color: #C1BAA9; background: transparent; border-style: dotted none none;" /></td>
+                                                </tr>
+                                            </table>
+                                            <table class="section-article" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; padding: 0;">
+                                                <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+                                                    <td style="border-collapse: collapse !important; vertical-align: top; text-align: left; color: #333333; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 20px; font-size: 14px; margin: 0; padding: 0px 0px 10px;" align="left" valign="top">
+                                                        <p style="color: #333333; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; text-align: left; line-height: 20px; font-size: 14px; margin: 0 0 20px; padding: 0;" align="left">In closing, we want to extend a special thanks to Omidyar Network for its generous multi-year matching grant and to our co-founder Mike Klein for his sustained support. We also want to thank the John S. and James L. Knight Foundation, Google.org, the William and Flora Hewlett Foundation, Rita Allen Foundation, Ford Foundation, Open Society Foundations, Kaphan Foundation, Stanton Foundation and so many others who make our work possible each day (to see our entire list of donors <a href="#" style="color: #005D6E; text-decoration: underline;">visit the Sunlight Foundation site</a> or to <a href="#" style="color: #005D6E; text-decoration: underline;">join their ranks</a>).</p>
+
+                                                        <p class="signature-block" style="color: #8E8883; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; text-align: left; line-height: 20px; font-size: 14px; margin: 0 0 20px; padding: 0;" align="left">
+                                                            <img class="signature" src="http://assets.sunlightfoundation.com.s3.amazonaws.com/email/Email-Images/cgsig.png" alt="Chris Gates" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; width: auto; max-width: 100%; float: none; clear: both; display: block;" align="none" />
+                                                            <em>Chris Gates</em>
+                                                            <br>
+                                                            <em>President</em>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+<!-- Section Content End -->
+                                        </td>
+                                        <td class="expander" style="border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #333333; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 20px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top"></td>
+                                    </tr>
+
+                                </table>
+
+                            </td>
+                        </tr>
+                    </table>
+                <br>
+                <br>
+
+                </td>
+            </tr>
+            </table>
+
+            <!-- Footer starts -->
+                <table class="row footer" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 100%; position: relative; border-top-color: #C1BAA9; border-top-style: solid; border-top-width: 2px; border-bottom-color: #C1BAA9; border-bottom-style: solid; border-bottom-width: 2px; background: #f5f5f5; padding: 0px;">
+                    <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+                        <td align="center" class="center" style="border-collapse: collapse !important; vertical-align: top; text-align: center; color: #333333; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 20px; font-size: 14px; margin: 0; padding: 0;" valign="top">
+                            <center style="width: 100%; min-width: 580px;">
+                                <table class="container" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: inherit; width: 580px; margin: 0 auto; padding: 0;">
+                                    <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+                                        <td class="wrapper last" style="border-collapse: collapse !important; vertical-align: top; text-align: left; position: relative; color: #333333; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 20px; font-size: 14px; margin: 0; padding: 10px 0px 0px;" align="left" valign="top">
+                                            <table class="twelve columns" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 580px; margin: 0 auto; padding: 0;">
+                                                <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+                                                    <td class="footer--section" style="border-collapse: collapse !important; vertical-align: top; text-align: left; color: #333333; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 20px; font-size: 14px; border-bottom-style: dashed; border-bottom-color: #C1BAA9; border-bottom-width: 1px; margin: 0; padding: 15px 0px;" align="left" valign="top">
+                                                        <h5 style="color: #444444; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: bold; text-align: left; line-height: 1.3; word-break: normal; font-size: 14px; text-transform: uppercase; margin: 0; padding: 0;" align="left">Mission Statement</h5>
+                                                        <p class="footer-text" style="color: #444444; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; text-align: left; line-height: 20px; font-size: 12px; margin: 0 0 0px; padding: 0;" align="left">The Sunlight Foundation is a nonpartisan nonprofit that advocates for open government globally and uses technology to make government more accountable to all.</p>
+                                                    </td>
+                                                </tr>
+                                                <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+                                                    <td class="footer--section" style="border-collapse: collapse !important; vertical-align: top; text-align: left; color: #333333; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 20px; font-size: 14px; border-bottom-style: dashed; border-bottom-color: #C1BAA9; border-bottom-width: 1px; margin: 0; padding: 15px 0px;" align="left" valign="top">
+                                                        <h5 style="color: #444444; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: bold; text-align: left; line-height: 1.3; word-break: normal; font-size: 14px; text-transform: uppercase; margin: 0; padding: 0;" align="left">We value your input and suggestions!</h5>
+                                                        <p class="footer-text" style="color: #444444; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; text-align: left; line-height: 20px; font-size: 12px; margin: 0 0 0px; padding: 0;" align="left">
+                                                            Let us hear from you at <a href="http://sunlightfoundation.com/contact/" style="color: #005D6E; text-decoration: underline;"> sunlightfoundation.com/contact</a> or call us at 202-742-1520.
+                                                            <br>
+                                                            1818 N Street NW | Suite 300 | Washington, DC 20036
+                                                        </p>
+                                                        <p class="footer-text" style="color: #444444; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; text-align: left; line-height: 20px; font-size: 12px; margin: 0 0 0px; padding: 0;" align="left">
+                                                            The Sunlight Foundation does not rent or sell email lists. Read about our <a href="http://sunlightfoundation.com/legal/privacy" style="color: #005D6E; text-decoration: underline;">Privacy Policy.</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+                                                    <td class="footer--section-last" style="border-collapse: collapse !important; vertical-align: top; text-align: left; color: #333333; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 20px; font-size: 14px; margin: 0; padding: 15px 0px 30px;" align="left" valign="top">
+                                                        <p class="footer-text" style="color: #444444; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; text-align: center; line-height: 20px; font-size: 12px; margin: 0 0 0px; padding: 0;" align="center"><a href="*|UNSUB|*" style="color: #005D6E; text-decoration: underline;">Unsubscribe or manage your email preferences</a></p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </center>
+                        </td>
+                    </tr>
+                </table> <!-- End of Footer -->
+            </center>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
