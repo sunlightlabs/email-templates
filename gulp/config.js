@@ -7,9 +7,10 @@ module.exports = {
             img: 'src/img/**/*'
         },
         build: {
-            template: 'build/template/*.html',
             templateDir: 'build/template/',
+            template: 'build/template/*.html',
             cssDir: 'build/css/',
+            css: 'build/css/*.css',
             imgDir: 'build/img/',
             img: 'build/img/**/*'
         },

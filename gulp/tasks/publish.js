@@ -1,4 +1,5 @@
 var gulp = require('gulp');
+    del = require('del'),
     paths = require('../config').paths,
     browserSync = require('browser-sync'),
     reload = browserSync.reload,
@@ -9,10 +10,12 @@ var gulp = require('gulp');
 // Runs templates through inliner, replace image paths and outputs to dist
 // Publishing images is a separate task for now
 
-gulp.task('publish', ['build'], function() {
-    return gulp.src(paths.build.template)
-    .pipe(premailer())
-    .pipe(replace(LOCAL_URL, AWS_URL))
-    .pipe(gulp.dest(paths.dist))
-    .pipe(reload({stream:true}));
+gulp.task('publish', function() {
+    return del([paths.dist], function () {
+        return gulp.src(paths.build.template)
+        .pipe(premailer())
+        .pipe(replace(LOCAL_URL, AWS_URL))
+        .pipe(gulp.dest(paths.dist))
+        .pipe(reload({stream:true}));
+    });
 });
