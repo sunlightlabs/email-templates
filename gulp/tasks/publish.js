@@ -5,7 +5,7 @@ var gulp = require('gulp');
     reload = browserSync.reload,
     replace = require('gulp-replace'),
     LOCAL_URL = '../img/',
-    AWS_URL = 'http://sunlight-cdn.s3.amazonaws.com/emails/';
+    AWS_URL = 'https://sunlight-cdn.s3.amazonaws.com/emails/';
 
 // Runs templates through inliner, replace image paths and outputs to dist
 // Publishing images is a separate task for now
