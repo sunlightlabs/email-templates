@@ -1,0 +1,24 @@
+@@include('ink/ink.css')
+@@include('base/base.css')
+
+h1.banner-header {
+    font-family: Georgia, serif;
+    font-style: italic;
+    color: #005D6E;
+    font-size: 29px;
+    font-weight: normal;
+    line-height: 200%;
+    text-align: center;
+    text-transform: uppercase;
+}
+h1.banner-header .character-decoration {
+    color:#FFFFFF; 
+    font-style: normal; 
+    font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; 
+    font-size: 40px;
+}
+
+.call-to-action.simple {
+    font-weight: bold;
+    text-align: center;
+}
