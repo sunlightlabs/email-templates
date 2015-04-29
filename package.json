@@ -16,6 +16,7 @@
     "browserify": "~6.2.0",
     "del": "^1.1.1",
     "gulp": "^3.8.11",
+    "gulp-awspublish": "^2.0.0",
     "gulp-connect": "^1.0.9",
     "gulp-file-include": "^0.8.0",
     "gulp-imagemin": "^2.2.1",
