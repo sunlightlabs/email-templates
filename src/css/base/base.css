@@ -66,6 +66,29 @@ table.large-button td {
     background: #42A5B3;
     border: 3px solid #137B80;
 }
+/* RED button variant*/
+table.button.red td,
+table.tiny-button.red td,
+table.small-button.red td,
+table.medium-button.red td,
+table.large-button.red td {
+    background: #de5234;
+    border: 3px solid #A63A1B;
+}
+table.button.red:hover td,
+table.button.red:visited td,
+table.button.red:active td {
+  background: #E4421F !important;
+}
+
+
+table.button.red:hover td,
+table.tiny-button.red:hover td,
+table.small-button.red:hover td,
+table.medium-button.red:hover td,
+table.large-button.red:hover td {
+  background: #E4421F !important;
+}
 
 
 table.button td a,
