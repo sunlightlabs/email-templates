@@ -1,0 +1,94 @@
+@@include('ink/ink.css')
+
+/* Import webfonts in a media query to hide it from Outlook*/
+
+@media screen {
+    /* Source Sans Pro (regular, italic, bold) from http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic */
+    @font-face {
+        font-family: 'Source Sans Pro'; font-style: normal; font-weight: 400; src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url('http://fonts.gstatic.com/s/sourcesanspro/v9/ODelI1aHBYDBqgeIAH2zlNzbP97U9sKh0jjxbPbfOKg.ttf') format('truetype');
+    }
+    @font-face {
+        font-family: 'Source Sans Pro'; font-style: normal; font-weight: 700; src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url('http://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGLsbIrGiHa6JIepkyt5c0A0.ttf') format('truetype');
+    }
+    @font-face {
+        font-family: 'Source Sans Pro'; font-style: italic; font-weight: 400; src: local('Source Sans Pro Italic'), local('SourceSansPro-It'), url('http://fonts.gstatic.com/s/sourcesanspro/v9/M2Jd71oPJhLKp0zdtTvoM0DauxaEVho0aInXGvhmB4k.ttf') format('truetype');
+    }
+}
+
+body, .body {
+    background: #f4f6f9;
+}
+
+/* Typography */
+
+body, table.body, h1, h2, h3, h4, h5, h6, p, td {
+    color: #333333;
+    font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+}
+
+/* Hidden email preview text */
+
+span.email-preview-text {
+    visibility: hidden;
+    display: none;
+    padding: 0 !important;
+    margin:0;
+    height:0px;
+    font-size:1px;
+    color: #ffffff;
+}
+
+img.logo {
+    width: 170px;
+    max-width: 170px;
+    height: 45px;
+}
+
+.main {
+    background: #ffffff;
+}
+
+.footer p {
+    font-size: 12px;
+    text-align: center;
+}
+
+.panel {
+    background: #fefae7;
+    border: none;
+    padding: 20px 30px !important;
+}
+
+h1 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.article--button-wrapper {
+    margin-top: 35px;
+}
+
+a.article--button {
+    background-color: #18a489;
+    border-radius: 3px;
+    color: #fff;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+    width: 320px;
+    -webkit-text-size-adjust: none;
+    mso-hide: all;
+}
+
+a.article--button:visited,
+a.article--button:hover,
+a.article--button:active {
+    color: #fff !important;
+}
