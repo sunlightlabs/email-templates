@@ -45,8 +45,8 @@ img.logo {
 }
 
 img.progress{
-    width:296px;
-    height:41px;
+    width:370px;
+    height:52px;
     padding:20px 0 0 0;
 }
 
@@ -90,7 +90,7 @@ a.article--button {
     line-height: 40px;
     text-align: center;
     text-decoration: none;
-    width: 320px;
+    width: 370px;
     -webkit-text-size-adjust: none;
     mso-hide: all;
 }
