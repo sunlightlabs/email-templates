@@ -44,6 +44,12 @@ img.logo {
     height: 45px;
 }
 
+img.progress{
+    width:296px;
+    height:41px;
+    padding:20px 0 0 0;
+}
+
 .main {
     background: #ffffff;
 }
@@ -68,7 +74,7 @@ h1 {
 h2 {
     font-size: 16px;
     font-weight: bold;
-    padding: 14px 0 14px 0;
+    padding: 2px 0 14px 0;
 }
 
 .article--button-wrapper {
@@ -88,8 +94,6 @@ a.article--button {
     -webkit-text-size-adjust: none;
     mso-hide: all;
 }
-
-
 
 a.article--button:visited,
 a.article--button:hover,
