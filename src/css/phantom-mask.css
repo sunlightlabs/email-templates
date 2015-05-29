@@ -121,5 +121,10 @@ td.bodycontent{
 }
 
 table.not-congress{
-    margin-top: 70px;
+    margin-top: 30px;
+}
+
+hr.line{
+    width:100%;
+    margin: 50px 0 0 0;
 }
