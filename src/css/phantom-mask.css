@@ -71,6 +71,10 @@ td.error-panel{
     padding: 20px 30px !important;
 }
 
+p{
+    margin-bottom:18px;
+}
+
 p.center{
     text-align:center;
 }
