@@ -88,6 +88,7 @@ p.descriptive{
    margin: 20px 10px 0 20px; 
 }
 
+
 h1 {
     font-size: 20px;
     font-weight: bold;
@@ -149,6 +150,16 @@ table.not-congress{
 hr.line{
     width:100%;
     margin: 50px 0 0 0;
+}
+
+li{
+    list-style-type: none;
+    display:inline;
+}
+
+li a{
+    padding:6px;
+    font-size:12px;
 }
 
 /*table.columns td, table.column td {
