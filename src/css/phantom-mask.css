@@ -65,6 +65,12 @@ img.progress{
     padding: 20px 30px !important;
 }
 
+td.error-panel{
+    background-color:#FBEDE9;
+    border: none;
+    padding: 20px 30px !important;
+}
+
 p.center{
     text-align:center;
 }
