@@ -65,6 +65,10 @@ img.progress{
     padding: 20px 30px !important;
 }
 
+p.center{
+    text-align:center;
+}
+
 h1 {
     font-size: 20px;
     font-weight: bold;
@@ -75,6 +79,10 @@ h2 {
     font-size: 16px;
     font-weight: bold;
     padding: 2px 0 14px 0;
+}
+
+h2.center{
+    text-align:center;
 }
 
 .article--button-wrapper {
@@ -106,4 +114,8 @@ a.article--button:active {
     width:72px;
     background-color:#000000;
     padding:0 30px 0 0;
+}
+
+td.bodycontent{
+    margin:0 0 0 20px;
 }
