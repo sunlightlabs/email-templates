@@ -72,6 +72,7 @@ img.capitol{
     background-color: #fefae7;
     border: none;
     padding: 20px 30px !important;
+    border-top: 3px solid #F7E9A8;
 }
 
 td.error-panel{
