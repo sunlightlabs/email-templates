@@ -60,6 +60,7 @@ img.progress{
 img.capitol{
     height:90px;
     width:72px;
+    float: none;
 }
 
 .main {
