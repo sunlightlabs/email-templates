@@ -177,6 +177,31 @@ li a{
     font-size:12px;
 }
 
-/*table.columns td, table.column td {
-  padding: 0px 0px 0px 0px;
-}*/
+@media only screen and (max-width: 600px) {
+
+    table[class="body"] img.sunlight-logo {
+        max-width: 250px !important;
+        width: 100% !important;
+    }
+
+    table[class="body"] .row.hero {
+        display: table !important;
+    }
+
+    h1{
+        font-size:30px;
+        line-height: 40px;
+    }
+
+
+
+}
+
+@media only screen and (max-width: 380px) {
+
+    h1{
+        font-size:30px;
+        line-height: 38px;
+    }
+
+    }
