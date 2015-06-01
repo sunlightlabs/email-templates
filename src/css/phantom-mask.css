@@ -291,10 +291,26 @@ li a{
         font-size: 30px;
         font-weight: bold;
         line-height: 38px;
-}
+    }
+
+    h2 {
+        font-size: 24px;
+    }
 
     p {
-      font-size: 20px;
-      line-height: 26px;
+        font-size: 16px;
+        line-height: 22px;
+        margin: 0 27px 18px 27px;
+    }
+
+    
+    p.descriptive {
+      margin: 25px 0px 17px 0px !important;
+
+    }
+
+    a.article--button {
+      font-size: 21px;
+      line-height: 65px;
     }
 }
