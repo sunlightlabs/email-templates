@@ -26,6 +26,11 @@ body, table.body, h1, h2, h3, h4, h5, h6, p, td {
     font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 }
 
+.footer p {
+    font-size: 12px;
+    text-align: center;
+}
+
 /* Hidden email preview text */
 
 span.email-preview-text {
@@ -59,10 +64,6 @@ img.capitol{
     background: #ffffff;
 }
 
-.footer p {
-    font-size: 12px;
-    text-align: center;
-}
 
 .panel {
     background-color: #fefae7;
