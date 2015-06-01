@@ -103,6 +103,11 @@ p.descriptive{
    margin: 20px 10px 0 20px; 
 }
 
+p.center-content{
+    margin: 0px 0px 20px 0px;
+    text-align: center;
+}
+
 
 h1 {
     font-size: 20px;
@@ -288,9 +293,9 @@ li a{
     }
 
     h1 {
-        font-size: 30px;
+        font-size: 26px;
         font-weight: bold;
-        line-height: 38px;
+        line-height: 32px;
     }
 
     h2 {
