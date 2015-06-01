@@ -68,11 +68,17 @@ img.capitol{
 }
 
 
-.panel {
+td.panel-border {
     background-color: #fefae7;
     border: none;
     padding: 20px 30px !important;
-    border-top: 3px solid #F7E9A8;
+    border-top: 3px solid #F7E9A8 !important;
+}
+
+td.panel {
+    background-color: #fefae7;
+    border: none;
+    padding: 20px 30px !important;
 }
 
 td.error-panel{
