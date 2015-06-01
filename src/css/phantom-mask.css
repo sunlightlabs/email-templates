@@ -319,6 +319,10 @@ li a{
       line-height: 65px;
     }
 
+    p.center-content{
+       margin: 0px 26px 20px 26px;
+    }
+
     .footer p {
       font-size: 14px;
 }
