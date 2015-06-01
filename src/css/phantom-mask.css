@@ -127,6 +127,10 @@ h2.center{
     margin: 0px 0px 0px 0px !important;
 }
 
+ul {
+  padding: 0px !important;
+}
+
 .article--button-wrapper {
     margin-top: 35px;
 }
