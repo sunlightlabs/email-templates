@@ -80,6 +80,10 @@ td.error-panel{
     padding: 20px 30px !important;
 }
 
+td.center {
+  padding: 0px !important;
+}
+
 p{
     margin: 0 0 18px 27px;
 }
