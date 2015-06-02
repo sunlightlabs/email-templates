@@ -63,6 +63,13 @@ img.capitol{
     float: none;
 }
 
+img.icon{
+    height:72px;
+    width:72px;
+    float:left;
+    margin: 0px 0px 0px 25px;
+}
+
 .main {
     background: #ffffff;
 }
@@ -156,7 +163,7 @@ a.article--button:active {
     color: #fff !important;
 }
 
-td.intro-icon{
+.intro-icon{
     height:72px;
     width:72px;
     background-color:#000000;
@@ -319,14 +326,19 @@ li a{
     }
 
     a.article--button {
-      font-size: 21px;
-      line-height: 65px;
+        font-size: 21px;
+        line-height: 65px;
     }
 
     p.center-content{
-       margin: 0px 26px 20px 26px;
+        margin: 0px 26px 20px 26px;
     }
 
     .footer p {
-      font-size: 14px;
+        font-size: 14px;
+    }
+
+    table.six.columns {
+        margin: 0px 0px 0px 0px !important;
+}
 }
