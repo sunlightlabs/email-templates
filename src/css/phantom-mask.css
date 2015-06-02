@@ -340,5 +340,9 @@ li a{
 
     table.six.columns {
         margin: 0px 0px 0px 0px !important;
+    }
 }
-}
+
+@media only screen and (max-width: 320px) {
+
+    }
