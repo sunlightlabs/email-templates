@@ -388,4 +388,8 @@ li a{
         font-weight: 700;
     }
 
+    p.footer-center-content {
+        padding: 0px 20px;
+    }
+
 }
