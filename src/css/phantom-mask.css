@@ -342,7 +342,11 @@ li a{
     }
 
     p.center-content{
-        margin: 0px 26px 20px 26px;
+        margin: 0px 25px 20px 25px;
+    }
+
+    p.footer-center-content {
+        padding: 0px 20px;
     }
 
     .footer p {
@@ -372,6 +376,7 @@ li a{
 
     h2 {
         font-size: 18px;
+        margin: 0px 25px;
     }
 
     p {
@@ -389,7 +394,7 @@ li a{
     }
 
     p.footer-center-content {
-        padding: 0px 20px;
+        padding: 0px 25px;
     }
 
 }
