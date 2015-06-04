@@ -165,6 +165,7 @@ a.article--button {
     -webkit-text-size-adjust: none;
     mso-hide: all;
     margin-bottom: 10px;
+    font-weight:600;
 }
 
 a.article--button:visited,
@@ -355,8 +356,12 @@ li a{
 
 @media only screen and (max-width: 380px) {
 
-    table[class="body"] table.columns {
+    /*table[class="body"] table.columns {
         width: 95% !important;
+    }*/
+
+    table[class="body"] table.columns td, table[class="body"] table.column td {
+        width: 100% !important;
     }
 
     h1 {
