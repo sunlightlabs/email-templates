@@ -393,6 +393,10 @@ li a{
         font-weight: 700;
     }
 
+    p.center-content{
+        margin: 0px 25px 20px 25px;
+    }
+
     p.footer-center-content {
         padding: 0px 25px;
     }
