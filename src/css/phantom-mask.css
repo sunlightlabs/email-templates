@@ -337,8 +337,10 @@ li a{
     }
 
     a.article--button {
-        font-size: 18px;
-        line-height: 54px;
+          font-size: 18px;
+            line-height: 29px;
+            width: 200px;
+            padding: 7px 27px;
     }
 
     p.center-content{
@@ -360,13 +362,13 @@ li a{
 
 @media only screen and (max-width: 380px) {
 
-    /*table[class="body"] table.columns {
-        width: 95% !important;
-    }*/
-
-    table[class="body"] table.columns td, table[class="body"] table.column td {
-        width: 100% !important;
+    table[class="body"] table.columns {
+        width: auto !important;
     }
+
+    /*table[class="body"] table.columns td, table[class="body"] table.column td {
+        width: 100% !important;
+    }*/
 
     h1 {
         font-size: 20px;
@@ -382,7 +384,7 @@ li a{
     p {
         font-size: 120%;
         line-height: 22px;
-        margin: 0 27px 18px 27px;
+        margin: 0px 25px 18px 25px;
     }
 
     a.article--button {
