@@ -315,19 +315,19 @@ li a{
     }
 
     h1 {
-        font-size: 150%;
-        font-weight: bold;
-        line-height: 32px;
+        font-size: 150% !important;
+        font-weight: bold !important;
+        line-height: 32px !important;
     }
 
     h2 {
-        font-size: 125%;
+        font-size: 125% !important;
     }
 
     p {
-        font-size: 16px;
-        line-height: 22px;
-        margin: 0 27px 18px 27px;
+        font-size: 16px !important;
+        line-height: 22px !important;
+        margin: 0 27px 18px 27px !important;
     }
 
     
@@ -337,22 +337,22 @@ li a{
     }
 
     a.article--button {
-          font-size: 18px;
-            line-height: 29px;
-            width: 200px;
-            padding: 7px 27px;
+          font-size: 18px !important;
+            line-height: 29px !important;
+            width: 200px !important;
+            padding: 7px 27px !important;
     }
 
     p.center-content{
-        margin: 0px 25px 20px 25px;
+        margin: 0px 25px 20px 25px !important;
     }
 
     p.footer-center-content {
-        padding: 0px 20px;
+        padding: 0px 20px !important;
     }
 
     .footer p {
-        font-size: 14px;
+        font-size: 14px !important;
     }
 
     table.six.columns {
@@ -371,36 +371,36 @@ li a{
     }*/
 
     h1 {
-        font-size: 20px;
-        font-weight: bold;
-        line-height: 25px;
+        font-size: 20px !important;
+        font-weight: bold !important;
+        line-height: 25px !important;
     }
 
     h2 {
-        font-size: 18px;
-        margin: 0px 25px;
+        font-size: 18px !important;
+        margin: 0px 25px !important;
     }
 
     p {
-        font-size: 120%;
-        line-height: 22px;
-        margin: 0px 25px 18px 25px;
+        font-size: 120% !important;
+        line-height: 22px !important;
+        margin: 0px 25px 18px 25px !important;
     }
 
     a.article--button {
-        width: auto;
-        font-size: 18px;
-        line-height: 23px;
-        padding: 10px 66px;
-        font-weight: 700;
+        width: auto !important;
+        font-size: 18px !important;
+        line-height: 23px !important;
+        padding: 10px 66px !important;
+        font-weight: 700 !important;
     }
 
     p.center-content{
-        margin: 0px 25px 20px 25px;
+        margin: 0px 25px 20px 25px !important;
     }
 
     p.footer-center-content {
-        padding: 0px 25px;
+        padding: 0px 25px !important;
     }
 
 }
