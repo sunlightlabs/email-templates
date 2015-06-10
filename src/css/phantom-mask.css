@@ -61,6 +61,7 @@ img.capitol{
     height:90px;
     width:72px;
     float: none;
+    image-rendering: auto;
 }
 
 img.icon{
@@ -207,6 +208,7 @@ li a{
 /*  Media Queries */
 
 @media only screen and (max-width: 600px) {
+
 
     table[class="body"] img {
         width: auto !important;
