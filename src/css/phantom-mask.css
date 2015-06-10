@@ -324,6 +324,7 @@ li a{
         font-size: 150% !important;
         font-weight: bold !important;
         line-height: 32px !important;
+/*        text-align: center !important;*/
     }
 
     h2 {
@@ -343,11 +344,19 @@ li a{
 
     }
 
+    p.icon-description {
+        text-align:center !important;
+    }
+
+    p.know-why{
+        margin: 25px 0px 25px 25px !important;
+    }
+
     a.article--button {
-          font-size: 18px !important;
-            line-height: 29px !important;
-            width: 200px !important;
-            padding: 7px 27px !important;
+        font-size: 18px !important;
+        line-height: 29px !important;
+        width: 80% !important;
+        padding: 7px 27px !important;
     }
 
     p.center-content{
@@ -375,8 +384,9 @@ li a{
     }
 
     table[class="body"] img.icon {
-        float: none;
-        margin: 0 auto;
+        float: none !important;
+        margin: 0 auto !important;
+        height: 180px !important;
     }
 }
 
@@ -398,10 +408,6 @@ li a{
         width: auto !important;
     }
 
-    /*table[class="body"] table.columns td, table[class="body"] table.column td {
-        width: 100% !important;
-    }*/
-
     h1 {
         font-size: 20px !important;
         font-weight: bold !important;
@@ -411,12 +417,17 @@ li a{
     h2 {
         font-size: 18px !important;
         margin: 0px 25px !important;
+        text-align:left;
     }
 
     p {
         font-size: 120% !important;
         line-height: 22px !important;
         margin: 0px 25px 18px 25px !important;
+    }
+
+     p.icon-description {
+        text-align:left !important;
     }
 
     a.article--button {
@@ -433,6 +444,10 @@ li a{
 
     p.footer-center-content {
         padding: 0px 25px !important;
+    }
+
+    hr.line {
+        margin: 0 20px 0 20px 0 !important;
     }
 
 }
