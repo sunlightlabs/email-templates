@@ -333,8 +333,8 @@ li a{
 
     h2 {
         font-size: 125% !important;
-        text-align: center;
-        margin: 0px;
+        text-align: center !important;
+        margin: 0px 20px 0px 20px !important;
     }
 
     p {
