@@ -103,6 +103,10 @@ p{
     margin: 0 0 18px 27px;
 }
 
+p.icon-description{
+    text-align:left;
+}
+
 p.center{
     text-align:center;
 }
@@ -209,13 +213,6 @@ li a{
 
 @media only screen and (max-width: 600px) {
 
-
-    table[class="body"] img.capitol{
-        height:90px !important;
-        width:72px !important;
-        float: none !important;
-        image-rendering: auto !important;
-    }
 
     table[class="body"] img {
         width: auto !important;
@@ -331,6 +328,7 @@ li a{
 
     h2 {
         font-size: 125% !important;
+        text-align: center;
     }
 
     p {
@@ -366,6 +364,19 @@ li a{
 
     table.six.columns {
         margin: 0px 0px 0px 0px !important;
+    }
+
+
+    table[class="body"] img.capitol{
+        height:90px !important;
+        width:72px !important;
+        float: none !important;
+        image-rendering: auto !important;
+    }
+
+    table[class="body"] img.icon {
+        float: none;
+        margin: 0 auto;
     }
 }
 
