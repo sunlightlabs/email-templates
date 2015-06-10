@@ -111,6 +111,10 @@ p.center{
     text-align:center;
 }
 
+p.know-why{
+    margin: 25px 0px 25px 25px !important;
+}
+
 p.descriptive{
    margin: 20px 10px 0 20px; 
 }
@@ -330,6 +334,7 @@ li a{
     h2 {
         font-size: 125% !important;
         text-align: center;
+        margin: 0px;
     }
 
     p {
@@ -348,8 +353,8 @@ li a{
         text-align:center !important;
     }
 
-    p.know-why{
-        margin: 25px 0px 25px 25px !important;
+    p.know-why {
+        margin: 25px 0 25px 0 !important;
     }
 
     a.article--button {
@@ -444,6 +449,10 @@ li a{
 
     p.footer-center-content {
         padding: 0px 25px !important;
+    }
+
+     p.know-why{
+        margin: 20px 0 0 0!important;
     }
 
     hr.line {
