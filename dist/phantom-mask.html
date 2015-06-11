@@ -174,6 +174,9 @@ background: #970b0e !important;
 body.outlook p {
 display: inline !important;
 }
+.ExternalClass {
+width: 100%;
+}
 body {
 background: #f4f6f9;
 }
@@ -524,7 +527,7 @@ color: #fff !important;
     font-size: 150% !important; font-weight: bold !important; line-height: 32px !important;
   }
   h2 {
-    font-size: 125% !important;
+    font-size: 125% !important; text-align: center !important; margin: 0px 20px 0px 20px !important;
   }
   p {
     font-size: 16px !important; line-height: 22px !important; margin: 0 27px 18px 27px !important;
@@ -532,8 +535,14 @@ color: #fff !important;
   p.descriptive {
     margin: 25px 0px 17px 0px !important;
   }
+  p.icon-description {
+    text-align: center !important;
+  }
+  p.know-why {
+    margin: 25px 0 25px 0 !important;
+  }
   a.article--button {
-    font-size: 18px !important; line-height: 29px !important; width: 200px !important; padding: 7px 27px !important;
+    font-size: 18px !important; line-height: 29px !important; width: 80% !important; padding: 7px 27px !important;
   }
   p.center-content {
     margin: 0px 25px 20px 25px !important;
@@ -546,6 +555,12 @@ color: #fff !important;
   }
   table.six.columns {
     margin: 0px 0px 0px 0px !important;
+  }
+  table[class="body"] img.capitol {
+    height: 90px !important; width: 72px !important; float: none !important; image-rendering: auto !important;
+  }
+  table[class="body"] img.icon {
+    float: none !important; margin: 0 auto !important; height: 180px !important;
   }
 }
 @media screen {
@@ -560,6 +575,12 @@ color: #fff !important;
   }
 }
 @media only screen and (max-width: 380px) {
+  table[class="body"] img {
+    width: auto !important; height: auto !important;
+  }
+  table[class="body"] img.capitol {
+    height: 90px !important; width: 72px !important; float: none !important; image-rendering: auto !important;
+  }
   table[class="body"] table.columns {
     width: auto !important;
   }
@@ -567,19 +588,28 @@ color: #fff !important;
     font-size: 20px !important; font-weight: bold !important; line-height: 25px !important;
   }
   h2 {
-    font-size: 18px !important; margin: 0px 25px !important;
+    font-size: 18px !important; margin: 0px 25px !important; text-align: left;
   }
   p {
     font-size: 120% !important; line-height: 22px !important; margin: 0px 25px 18px 25px !important;
   }
+  p.icon-description {
+    text-align: left !important;
+  }
   a.article--button {
-    width: auto !important; font-size: 18px !important; line-height: 23px !important; padding: 10px 66px !important; font-weight: 700 !important;
+    width: auto !important; font-size: 18px !important; line-height: 30px !important; font-weight: 700 !important;
   }
   p.center-content {
     margin: 0px 25px 20px 25px !important;
   }
   p.footer-center-content {
     padding: 0px 25px !important;
+  }
+  p.know-why {
+    margin: 20px 0 0 0 !important;
+  }
+  hr.line {
+    margin: 0 20px 0 20px 0 !important;
   }
 }
 </style>
@@ -623,7 +653,7 @@ color: #fff !important;
                                                     <td class="center" style="border-collapse: collapse !important; color: #333333; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-size: 14px; font-weight: normal; line-height: 19px; margin: 0; padding: 0px; text-align: center; vertical-align: top" align="center" valign="top">
                                                             <center style="min-width: 380px; width: 100%">
                                     
-                                                                    <img class="capitol" src="https://sunlight-cdn.s3.amazonaws.com/emails/phantom-mask/yellow-capitol.png" width="72" height="90" alt="Sunlight Foundation" style="-ms-interpolation-mode: bicubic; clear: both; display: block; float: none; height: 90px; max-width: 100%; outline: none; text-decoration: none; width: 72px" align="none" />
+                                                                    <img class="capitol" src="https://sunlight-cdn.s3.amazonaws.com/emails/phantom-mask/yellow-capitol.png" width="72" height="90" alt="Sunlight Foundation" style="-ms-interpolation-mode: bicubic; clear: both; display: block; float: none; height: 90px; image-rendering: auto; max-width: 100%; outline: none; text-decoration: none; width: 72px" align="none" />
                                                                
                                                             </center>
                                                         </td>
@@ -637,7 +667,7 @@ color: #fff !important;
 
 
                                                             <center style="min-width: 380px; width: 100%">
-                                                                <img class="progress center" src="https://sunlight-cdn.s3.amazonaws.com/emails/phantom-mask/progress-bar.png" width="370" height="52" alt="Progress Bar" style="-ms-interpolation-mode: bicubic; clear: both; display: block; float: none; height: 52px; margin: 0 auto; max-width: 100%; outline: none; padding: 20px 0 0; text-decoration: none; width: 370px" align="none" />
+                                                                <img class="progress center" src="https://sunlight-cdn.s3.amazonaws.com/emails/phantom-mask/progress-bar.png" width="380" height="50" alt="Progress Bar" style="-ms-interpolation-mode: bicubic; clear: both; display: block; float: none; height: 50px; margin: 0 auto; max-width: 100%; outline: none; padding: 20px 0 0; text-decoration: none; width: 380px" align="none" />
                                                                 
                                                             </center>
 
@@ -685,7 +715,7 @@ color: #fff !important;
                                                         <td class="error-panel" style="background: #FBEDE9; border-collapse: collapse !important; border: none; color: #333333; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-size: 14px; font-weight: normal; line-height: 19px; margin: 0; padding: 20px 30px; text-align: left; vertical-align: top" align="left" bgcolor="#FBEDE9" valign="top"> <!--intro error copy, red background-->
                                                             <!-- <h1>There's just one more step to complete before we can deliver your message to your legislator.</h1> -->
                                                             <h1 style="color: #333333; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-size: 20px; font-weight: bold; line-height: 28px; margin: 0; padding: 0; text-align: left; word-break: normal" align="left">Looks like you’re really emailing a lot! To keep our system running smoothly, we’ll have to <a href="#" style="color: #2ba6cb; text-decoration: none">temporarily hold off</a> on sending your messages.</h1>
-                                                            <p class="descriptive" style="color: #333333; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-size: 14px; font-weight: normal; line-height: 19px; margin: 20px 10px 0 20px; padding: 0; text-align: left" align="left"><strong>Want to know why?</strong> <i>Due to the way congressional websites are designed, we can only connect you to the members representing the address you provided us. Feel free to ask the members who represents you to forward your message to other members you’d like to contact. You can also mail a letter or call a member’s office by looking up that information.</i></p>
+                                                            <p class="know-why" style="color: #333333; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-size: 14px; font-weight: normal; line-height: 19px; margin: 25px 0px 25px 25px; padding: 0; text-align: left" align="left"><strong>Want to know why?</strong> <i>Due to the way congressional websites are designed, we can only connect you to the members representing the address you provided us. Feel free to ask the members who represents you to forward your message to other members you’d like to contact. You can also mail a letter or call a member’s office by looking up that information.</i></p>
 
 
                                                         </td>
@@ -708,7 +738,7 @@ color: #fff !important;
                                                                         <td style="border-collapse: collapse !important; color: #333333; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-size: 14px; font-weight: normal; line-height: 19px; margin: 0; padding: 0px 0px 10px; text-align: left; vertical-align: top" align="left" valign="top">
 
 
-                                                                            <img class="icon" src="https://sunlight-cdn.s3.amazonaws.com/emails/phantom-mask/intro-icon.png" width="72" height="72" alt="Icon 1" style="-ms-interpolation-mode: bicubic; clear: both; display: block; float: left; height: 72px; margin: 0px 0px 0px 25px; max-width: 100%; outline: none; text-decoration: none; width: 72px" align="left" />
+                                                                            <img class="icon" src="https://sunlight-cdn.s3.amazonaws.com/emails/phantom-mask/icon-1.png" width="100" height="120" alt="Icon 1" style="-ms-interpolation-mode: bicubic; clear: both; display: block; float: left; height: 120px; margin: 0px 0px 0px 25px; max-width: 100%; outline: none; text-decoration: none; width: 100px" align="left" />
 
                                                                        </td>
                                                                        <td class="expander" style="border-collapse: collapse !important; color: #333333; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-size: 14px; font-weight: normal; line-height: 19px; margin: 0; padding: 0; text-align: left; vertical-align: top; visibility: hidden; width: 0px" align="left" valign="top"></td>
@@ -724,7 +754,7 @@ color: #fff !important;
 
                                                                     <h2 style="color: #333333; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-size: 16px; font-weight: bold; line-height: 1.3; margin: 0 0 0 25px; padding: 2px 0 14px; text-align: left; word-break: normal" align="left">I already sent my message, why are you contacting me?</h2>
 
-                                                                    <p style="color: #333333; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-size: 14px; font-weight: normal; line-height: 19px; margin: 0 0 18px 27px; padding: 0; text-align: left" align="left">We are a service called OpenCongress that allows anyone to simply send email to Congress instead of filling out congressional forms each time.</p>
+                                                                    <p class="icon-description" style="color: #333333; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-size: 14px; font-weight: normal; line-height: 19px; margin: 0 0 18px 27px; padding: 0; text-align: left" align="left">We are a service called OpenCongress that allows anyone to simply send email to Congress instead of filling out congressional forms each time.</p>
 
                                                                 </td>
                                                                 <td class="expander" style="border-collapse: collapse !important; color: #333333; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-size: 14px; font-weight: normal; line-height: 19px; margin: 0; padding: 0; text-align: left; vertical-align: top; visibility: hidden; width: 0px" align="left" valign="top"></td>
@@ -743,7 +773,7 @@ color: #fff !important;
                                                       <tr style="padding: 0; text-align: left; vertical-align: top" align="left">
                                                         <td style="border-collapse: collapse !important; color: #333333; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-size: 14px; font-weight: normal; line-height: 19px; margin: 0; padding: 0px 0px 10px; text-align: left; vertical-align: top" align="left" valign="top">
 
-                                                           <img class="icon" src="https://sunlight-cdn.s3.amazonaws.com/emails/phantom-mask/intro-icon.png" width="72" height="72" alt="Icon 1" style="-ms-interpolation-mode: bicubic; clear: both; display: block; float: left; height: 72px; margin: 0px 0px 0px 25px; max-width: 100%; outline: none; text-decoration: none; width: 72px" align="left" />
+                                                           <img class="icon" src="https://sunlight-cdn.s3.amazonaws.com/emails/phantom-mask/icon-2.png" width="100" height="120" alt="Icon 1" style="-ms-interpolation-mode: bicubic; clear: both; display: block; float: left; height: 120px; margin: 0px 0px 0px 25px; max-width: 100%; outline: none; text-decoration: none; width: 100px" align="left" />
 
                                                        </td>
                                                        <td class="expander" style="border-collapse: collapse !important; color: #333333; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-size: 14px; font-weight: normal; line-height: 19px; margin: 0; padding: 0; text-align: left; vertical-align: top; visibility: hidden; width: 0px" align="left" valign="top"></td>
@@ -759,7 +789,7 @@ color: #fff !important;
 
                                                     <h2 style="color: #333333; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-size: 16px; font-weight: bold; line-height: 1.3; margin: 0 0 0 25px; padding: 2px 0 14px; text-align: left; word-break: normal" align="left">Why should I use this service to send my email?</h2>
 
-                                                    <p style="color: #333333; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-size: 14px; font-weight: normal; line-height: 19px; margin: 0 0 18px 27px; padding: 0; text-align: left" align="left">It's easier and faster than the system Congress currently uses. Just fill out the required form once and then you can communicate with Congress by email.</p>
+                                                    <p class="icon-description" style="color: #333333; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-size: 14px; font-weight: normal; line-height: 19px; margin: 0 0 18px 27px; padding: 0; text-align: left" align="left">It's easier and faster than the system Congress currently uses. Just fill out the required form once and then you can communicate with Congress by email.</p>
 
                                                 </td>
                                                 <td class="expander" style="border-collapse: collapse !important; color: #333333; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-size: 14px; font-weight: normal; line-height: 19px; margin: 0; padding: 0; text-align: left; vertical-align: top; visibility: hidden; width: 0px" align="left" valign="top"></td>
@@ -778,7 +808,7 @@ color: #fff !important;
                                       <tr style="padding: 0; text-align: left; vertical-align: top" align="left">
                                         <td style="border-collapse: collapse !important; color: #333333; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-size: 14px; font-weight: normal; line-height: 19px; margin: 0; padding: 0px 0px 10px; text-align: left; vertical-align: top" align="left" valign="top">
 
-                                           <img class="icon" src="https://sunlight-cdn.s3.amazonaws.com/emails/phantom-mask/intro-icon.png" width="72" height="72" alt="Icon 1" style="-ms-interpolation-mode: bicubic; clear: both; display: block; float: left; height: 72px; margin: 0px 0px 0px 25px; max-width: 100%; outline: none; text-decoration: none; width: 72px" align="left" />
+                                           <img class="icon" src="https://sunlight-cdn.s3.amazonaws.com/emails/phantom-mask/icon-3.png" width="100" height="120" alt="Icon 1" style="-ms-interpolation-mode: bicubic; clear: both; display: block; float: left; height: 120px; margin: 0px 0px 0px 25px; max-width: 100%; outline: none; text-decoration: none; width: 100px" align="left" />
 
                                        </td>
                                        <td class="expander" style="border-collapse: collapse !important; color: #333333; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-size: 14px; font-weight: normal; line-height: 19px; margin: 0; padding: 0; text-align: left; vertical-align: top; visibility: hidden; width: 0px" align="left" valign="top"></td>
@@ -794,7 +824,7 @@ color: #fff !important;
 
                                     <h2 style="color: #333333; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-size: 16px; font-weight: bold; line-height: 1.3; margin: 0 0 0 25px; padding: 2px 0 14px; text-align: left; word-break: normal" align="left">What's the next step to sending my message?</h2>
 
-                                    <p style="color: #333333; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-size: 14px; font-weight: normal; line-height: 19px; margin: 0 0 18px 27px; padding: 0; text-align: left" align="left">Congress requires some basic information (such as your address) to recieve a message, so we need to gather that to get your message through their system. Please take the next step now:</p>
+                                    <p class="icon-description" style="color: #333333; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-size: 14px; font-weight: normal; line-height: 19px; margin: 0 0 18px 27px; padding: 0; text-align: left" align="left">Congress requires some basic information (such as your address) to recieve a message, so we need to gather that to get your message through their system. Please take the next step now:</p>
 
                                 </td>
                                 <td class="expander" style="border-collapse: collapse !important; color: #333333; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-size: 14px; font-weight: normal; line-height: 19px; margin: 0; padding: 0; text-align: left; vertical-align: top; visibility: hidden; width: 0px" align="left" valign="top"></td>
