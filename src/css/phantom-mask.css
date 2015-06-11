@@ -15,7 +15,9 @@
     }
 }
 
-.ExternalClass {width: 100%;}
+.ExternalClass {
+    width: 100% !important;
+}
 
 body, .body {
     background: #f4f6f9;
