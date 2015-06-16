@@ -1,17 +1,6 @@
 /* Import webfonts in a media query to hide it from Outlook*/
 
-@media screen {
-    /* Source Sans Pro (regular, italic, bold) from http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic */
-    @font-face {
-        font-family: 'Source Sans Pro'; font-style: normal; font-weight: 400; src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url('http://fonts.gstatic.com/s/sourcesanspro/v9/ODelI1aHBYDBqgeIAH2zlNzbP97U9sKh0jjxbPbfOKg.ttf') format('truetype');
-    }
-    @font-face {
-        font-family: 'Source Sans Pro'; font-style: normal; font-weight: 700; src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url('http://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGLsbIrGiHa6JIepkyt5c0A0.ttf') format('truetype');
-    }
-    @font-face {
-        font-family: 'Source Sans Pro'; font-style: italic; font-weight: 400; src: local('Source Sans Pro Italic'), local('SourceSansPro-It'), url('http://fonts.gstatic.com/s/sourcesanspro/v9/M2Jd71oPJhLKp0zdtTvoM0DauxaEVho0aInXGvhmB4k.ttf') format('truetype');
-    }
-}
+
 
 /* Ink Framework Overides */
 
@@ -25,7 +14,7 @@ hr {
 
 body, table.body, h1, h2, h3, h4, h5, h6, p, td {
     color: #333333;
-    font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 }
 
 body, table.body, p, td {
@@ -97,7 +86,7 @@ table.small-button td a,
 table.medium-button td a,
 table.large-button td a {
     font-weight: normal;
-    font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
     font-size: 14px;
 }
 
@@ -131,7 +120,7 @@ img.headershare--social {
 
 .footer h5 {
     text-transform: uppercase;
-    font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
     font-size: 14px;
     font-weight: bold;
     color: #444444;
@@ -155,7 +144,7 @@ td.footer--section-last {
 }
 
 p.footer-text {
-    font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
     font-size: 12px;
     color: #444444;
     margin-bottom: 0px !important;

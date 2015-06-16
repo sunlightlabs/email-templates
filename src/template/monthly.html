@@ -52,7 +52,7 @@
                                 <td class="text-pad u-valignm">
                                     <table class="u-valignm">
                                         <tr class="u-valignm">
-                                            <td class="u-nobottompad u-valignm">
+                                            <td mc:edit="header" class="u-nobottompad u-valignm">
                                                 <h2 class="hero--title center">March Madness</h2>
                                             </td>
                                         </tr>
@@ -75,7 +75,7 @@
                                             </td>
                                         </tr>
                                         <tr class="u-valignm">
-                                            <td class="u-valignm">
+                                            <td mc:edit="intro-text" class="u-valignm">
                                                 <p class="hero--text center">Welcome to the inaugural issue of <em>This Month in Sunlight</em>, a new offering that will provide you with updates on what we’re up to at the Sunlight Foundation. Expect a single digest to arrive on the first week of each month, featuring a few great stories and a surprise or two (GIFs? Photos of our analog coffee clock?). Stay tuned!</p>
                                             </td>
                                         </tr>
@@ -101,13 +101,13 @@
     <tr>
         <td>
 
-            <table class="row article">
+            <table class="row article" mc:repeatable mc:hideable>
                 <tr>
                     <td class="wrapper">
                         <table class="four columns">
                             <tr>
                                 <td>
-                                    <img class="article--img" src="http://placehold.it/340x340" width="170" height="170" alt="Alt text"/>
+                                    <img mc:edit="article-image" class="article--img" src="http://placehold.it/340x340" width="170" height="170" alt="REPLACE_ALT_TEXT"/>
                                 </td>
                                 <td class="expander">
                                 </td>
@@ -117,73 +117,13 @@
                     <td class="wrapper last">
                         <table class="eight columns">
                             <tr>
-                                <td>
+                                <td mc:edit="article-content">
                                     <h3 class="article--header">Sunshine Week Happiness</h3>
                                     <p class="article--text">Get your Sunshine Week on! We’re celebrating public’s right to know this year by teaming up with MuckRock and EFF for a dual happy hour/award ceremony here in DC. Join us! Not in DC, but still want to take part? Check out this calendar of events over at <a href="">sunshineweek.org</a>.</p>
-                                    <div class="article--button-wrapper">
-                                        <!--[if mso]><v:rect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="#" style="height:40px;v-text-anchor:middle;width:230px;" strokecolor="#FFDB15" fillcolor="#fff9e1"><w:anchorlock/><center style="color:#42a5b3;font-family:'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;font-size:16px;">Get Your Happy On &raquo;</center></v:rect><![endif]-->
-                                        <a class="article--button" href="#">Get Your Happy On &raquo;</a>
-                                    </div>
-                                </td>
-                                <td class="expander">
                                 </td>
                             </tr>
-                        </table>
-                    </td>
-                </tr>
-            </table>
-
-            <table class="row article">
-                <tr>
-                    <td class="wrapper">
-                        <table class="four columns">
                             <tr>
-                                <td>
-                                    <img class="article--img" src="http://placehold.it/340x340" width="170" height="170" alt="Alt text"/>
-                                </td>
-                                <td class="expander">
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                    <td class="wrapper last">
-                        <table class="eight columns">
-                            <tr>
-                                <td>
-                                    <h3 class="article--header">Sunshine Week Happiness</h3>
-                                    <p class="article--text">Get your Sunshine Week on! We’re celebrating public’s right to know this year by teaming up with MuckRock and EFF for a dual happy hour/award ceremony here in DC. Join us! Not in DC, but still want to take part? Check out this calendar of events over at <a href="">sunshineweek.org</a>.</p>
-                                    <div class="article--button-wrapper">
-                                        <!--[if mso]><v:rect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="#" style="height:40px;v-text-anchor:middle;width:230px;" strokecolor="#FFDB15" fillcolor="#fff9e1"><w:anchorlock/><center style="color:#42a5b3;font-family:'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;font-size:16px;">Get Your Happy On &raquo;</center></v:rect><![endif]-->
-                                        <a class="article--button" href="#">Get Your Happy On &raquo;</a>
-                                    </div>
-                                </td>
-                                <td class="expander">
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-            </table>
-
-            <table class="row article">
-                <tr>
-                    <td class="wrapper">
-                        <table class="four columns">
-                            <tr>
-                                <td>
-                                    <img class="article--img" src="http://placehold.it/340x340" width="170" height="170" alt="Alt text"/>
-                                </td>
-                                <td class="expander">
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                    <td class="wrapper last">
-                        <table class="eight columns">
-                            <tr>
-                                <td>
-                                    <h3 class="article--header">Sunshine Week Happiness</h3>
-                                    <p class="article--text">Get your Sunshine Week on! We’re celebrating public’s right to know this year by teaming up with MuckRock and EFF for a dual happy hour/award ceremony here in DC. Join us! Not in DC, but still want to take part? Check out this calendar of events over at <a href="">sunshineweek.org</a>.</p>
+                                <td mc:edit="article-button" mc:hideable>
                                     <div class="article--button-wrapper">
                                         <!--[if mso]><v:rect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="#" style="height:40px;v-text-anchor:middle;width:230px;" strokecolor="#FFDB15" fillcolor="#fff9e1"><w:anchorlock/><center style="color:#42a5b3;font-family:'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;font-size:16px;">Get Your Happy On &raquo;</center></v:rect><![endif]-->
                                         <a class="article--button" href="#">Get Your Happy On &raquo;</a>
@@ -203,7 +143,7 @@
                 </tr>    
             </table>
 
-            <table class="prompt">
+            <table class="prompt" mc:hideable>
                 <tr>
                     <td>
                         <table class="row">
@@ -237,9 +177,9 @@
                                 <td class="wrapper">
                                     <table class="eight columns">
                                         <tr>
-                                            <td class="pad-left">
+                                            <td mc:edit="prompt-text" class="pad-left">
                                                 <p class="prompt--text">
-                                                    Get more transparency! We now offer daily, weekly and monthly digests for your opengov fix.
+                                                    Want a daily dose of opengov news? Sign up for our morning newsletter, Today in OpenGov!
                                                 </p>
                                             </td>
                                             <td class="expander">
@@ -250,10 +190,10 @@
                                 <td class="wrapper last">
                                     <table class="four columns">
                                         <tr>
-                                            <td class="pad-right">
+                                            <td mc:edit="prompt-button" class="pad-right">
                                                 <div class="prompt--button-wrapper">
-                                                    <!--[if mso]><v:rect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="#" style="height:35px;v-text-anchor:middle;width:145px;" strokecolor="#42a5b3" fillcolor="#ffffff"><w:anchorlock/><center style="color:#42a5b3;font-family:'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;font-size:16px;">Sign Up</center></v:rect><![endif]-->
-                                                    <a class="prompt--button" href="#">Sign Up</a>
+                                                    <!--[if mso]><v:rect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://sunlightfoundation.us5.list-manage.com/subscribe?u=d5304df77590e80121f8e02ec&id=8aaf01d6dd" style="height:35px;v-text-anchor:middle;width:145px;" strokecolor="#42a5b3" fillcolor="#ffffff"><w:anchorlock/><center style="color:#42a5b3;font-family:'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;font-size:16px;">Sign Up</center></v:rect><![endif]-->
+                                                    <a class="prompt--button" href="http://sunlightfoundation.us5.list-manage.com/subscribe?u=d5304df77590e80121f8e02ec&id=8aaf01d6dd">Sign Up</a>
                                                 </div>
                                             </td>
                                             <td class="expander">
@@ -276,22 +216,22 @@
             <table class="row article">
                 <tr>
                     <td class="wrapper last">
-                        <table class="twelve columns">
+                        <table class="twelve columns" mc:hideable>
                             <tr>
-                                <td height="10"></td>
-                            </tr>
-                            <tr>
-                                <td>
+                                <td mc:edit="gif-title">
                                     <h3 class="article--header center">Our GIF to You</h3>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <img class="article--img-full" src="../img/monthly/gif-mrmanager.gif" width="580" alt="A GIF from us"/>
-                                    <br>
-                                    <p class="article--caption">Nicko, resident Sunlight bear, types away at his desk.</p>
+                                    <center>
+                                        <img mc:edit="gif-image" class="article--img-full" src="../img/monthly/gif-mrmanager.gif" width="580" alt="A GIF from us"/>
+                                    </center>
                                 </td>
-                                <td class="expander">
+                            </tr>
+                            <tr>
+                                <td mc:edit="gif-caption" mc:hideable>
+                                    <p class="article--caption">Nicko, resident Sunlight bear, types away at his desk.</p>
                                 </td>
                             </tr>
                         </table>
@@ -299,7 +239,7 @@
                 </tr>
             </table>
 
-            <table class="socialmedia">
+            <table class="socialmedia" mc:hideable>
                 <tr>
                     <td height="25"></td>
                 </tr>
@@ -314,7 +254,7 @@
                                                 <td class="socialmedia--divider-wrapper">
                                                     <hr class="socialmedia--divider">
                                                 </td>
-                                                <td class="socialmedia--header-wrapper">
+                                                <td mc:edit="socialmedia-header" class="socialmedia--header-wrapper">
                                                     <h3 class="socialmedia--header center">Tell us what you think!</h3>
                                                 </td>
                                                 <td class="socialmedia--divider-wrapper">
@@ -335,11 +275,11 @@
                                 <td class="wrapper">
                                     <table class="six columns">
                                         <tr>
-                                            <td>
+                                            <td mc:edit="socialmedia-twitter">
                                                 <div class="socialmedia--button-wrapper-left">
                                                     <!--[if mso]><v:rect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://twitter.com/sunfoundation" style="height:40px;v-text-anchor:middle;width:270px;" strokecolor="#55acee" fillcolor="#55acee"><w:anchorlock/><center style="color:#ffffff;font-family:'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;font-size:16px;">Tweet at Us</center></v:rect><![endif]-->
                                                     <a class="socialmedia--twitter-button" href="https://twitter.com/sunfoundation">
-                                                        Tweet at Us
+                                                        Share this on Twitter
                                                     </a>
                                                 </div>
                                             </td>
@@ -351,11 +291,11 @@
                                 <td class="wrapper last">
                                     <table class="six columns">
                                         <tr>
-                                            <td>
+                                            <td mc:edit="socialmedia-facebook">
                                                 <div class="socialmedia--button-wrapper-right">
                                                     <!--[if mso]><v:rect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://www.facebook.com/sunlightfoundation" style="height:40px;v-text-anchor:middle;width:270px;" strokecolor="#3b5998" fillcolor="#3b5998"><w:anchorlock/><center style="color:#ffffff;font-family:'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;font-size:16px;">Find Us on Facebook</center></v:rect><![endif]-->
                                                     <a class="socialmedia--facebook-button" href="https://www.facebook.com/sunlightfoundation">
-                                                        Find us on Facebook
+                                                        Share this on Facebook
                                                     </a>
                                                 </div>
                                             </td>
