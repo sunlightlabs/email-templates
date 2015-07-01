@@ -21,3 +21,8 @@ h1.banner-header .character-decoration {
     font-weight: bold;
     text-align: center;
 }
+
+.hero-img {
+    width: 100%;
+    float: none;
+}
